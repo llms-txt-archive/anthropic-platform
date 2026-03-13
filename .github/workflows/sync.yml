@@ -10,12 +10,12 @@ permissions:
 
 jobs:
   sync:
-    uses: f-pisani/claudecodedocs/.github/workflows/snapshot-sync.yml@7d3c68ad44900501cfbf558f7043290078402f87
+    uses: f-pisani/claudecodedocs/.github/workflows/snapshot-sync.yml@ff187f72d6d610797cf0096a53790818a563ef01
     with:
       source_url: https://platform.claude.com/llms.txt
       site_name: Claude Platform Docs
       site_url: https://platform.claude.com
       repo_title: Claude Platform Docs Archive
       schedule_label: Hourly at :42 UTC
-      tool_ref: 7d3c68ad44900501cfbf558f7043290078402f87
+      tool_ref: ff187f72d6d610797cf0096a53790818a563ef01
     secrets: inherit
