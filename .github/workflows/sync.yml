@@ -1,0 +1,21 @@
+name: Sync Claude Platform Docs Archive
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "42 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    uses: f-pisani/claudecodedocs/.github/workflows/snapshot-sync.yml@4b8bb177db04f5a34917b02d101d8274f2e6a5df
+    with:
+      source_url: https://platform.claude.com/llms.txt
+      site_name: Claude Platform Docs
+      site_url: https://platform.claude.com
+      repo_title: Claude Platform Docs Archive
+      schedule_label: Hourly at :42 UTC
+      tool_ref: 4b8bb177db04f5a34917b02d101d8274f2e6a5df
+    secrets: inherit
