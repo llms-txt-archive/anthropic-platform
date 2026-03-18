@@ -20,6 +20,7 @@ This repository is auto-generated and updated by CI from the source `llms.txt` i
 
 | Release | Published | Link |
 | --- | --- | --- |
-| `archive-20260317T080136Z` | 2026-03-17 08:01 UTC | [Thinking Display Controls and Large File Guidance](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260317T080136Z) |
+| `archive-20260318T012359Z` | 2026-03-18 01:23 UTC | [Claude Platform Release Notes Rename](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260318T012359Z) |
+| `archive-20260317T080136Z` | 2026-03-17 08:02 UTC | [Thinking Display Controls and Large File Guidance](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260317T080136Z) |
 | `archive-20260316T170519Z` | 2026-03-16 17:06 UTC | [Billing error and spend-limit docs update](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260316T170519Z) |
 | `initial` | 2026-03-13 22:30 UTC | [Initial release](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/initial) |
