@@ -20,9 +20,9 @@ This repository is auto-generated and updated by CI from the source `llms.txt` i
 
 | Release | Published | Link |
 | --- | --- | --- |
-| `archive-20260319T215244Z` | 2026-03-19 21:52 UTC | [Go SDK param deserialization and extended thinking clarifications](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260319T215244Z) |
+| `archive-20260319T235136Z` | 2026-03-19 23:51 UTC | [Prompt Caching Clarifications and SDK Refresh](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260319T235136Z) |
+| `archive-20260319T215244Z` | 2026-03-19 21:53 UTC | [Go SDK param deserialization and extended thinking clarifications](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260319T215244Z) |
 | `archive-20260319T170426Z` | 2026-03-19 17:05 UTC | [Feature Availability Labels and Fast Mode Beta Wording](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260319T170426Z) |
 | `archive-20260318T235117Z` | 2026-03-18 23:52 UTC | [Compaction Guide Example Refresh](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260318T235117Z) |
 | `archive-20260318T215359Z` | 2026-03-18 21:54 UTC | [Models API doc wording and link fixes](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260318T215359Z) |
 | `archive-20260318T190452Z` | 2026-03-18 19:07 UTC | [Models API Metadata and Thinking Controls](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260318T190452Z) |
-| `archive-20260318T012359Z` | 2026-03-18 01:24 UTC | [Claude Platform Release Notes Rename](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260318T012359Z) |

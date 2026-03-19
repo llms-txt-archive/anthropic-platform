@@ -21,12 +21,12 @@ import (
 Or to pin the version:
 
 ```bash
-go get -u 'github.com/anthropics/anthropic-sdk-go@v1.19.0'
+go get -u 'github.com/anthropics/anthropic-sdk-go@v1.27.1'
 ```
 
 ## Requirements
 
-This library requires Go 1.22+.
+This library requires Go 1.23+.
 
 ## Usage
 
