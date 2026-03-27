@@ -20,9 +20,9 @@ This repository is auto-generated and updated by CI from the source `llms.txt` i
 
 | Release | Published | Link |
 | --- | --- | --- |
-| `archive-20260327T010730Z` | 2026-03-27 01:07 UTC | [Adaptive thinking becomes the recommended 4.6 path](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260327T010730Z) |
+| `archive-20260327T170341Z` | 2026-03-27 17:03 UTC | [Agent SDK Session and Runtime Docs](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260327T170341Z) |
+| `archive-20260327T010730Z` | 2026-03-27 01:08 UTC | [Adaptive thinking becomes the recommended 4.6 path](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260327T010730Z) |
 | `archive-20260326T215155Z` | 2026-03-26 21:54 UTC | [Tool Use Split and Retention Docs Refresh](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260326T215155Z) |
 | `archive-20260326T070537Z` | 2026-03-26 07:06 UTC | [Pricing docs clarify Claude API data residency](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260326T070537Z) |
 | `archive-20260323T180057Z` | 2026-03-23 18:02 UTC | [Tool Search Guide and Agent SDK Refresh](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260323T180057Z) |
 | `archive-20260321T165223Z` | 2026-03-21 16:54 UTC | [SDK and Tooling Example Refresh](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260321T165223Z) |
-| `archive-20260319T235136Z` | 2026-03-19 23:52 UTC | [Prompt Caching Clarifications and SDK Refresh](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260319T235136Z) |
