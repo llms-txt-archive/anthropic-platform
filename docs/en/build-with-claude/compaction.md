@@ -3067,8 +3067,8 @@ puts chat(client, messages, "Now add rate limiting and error handling")
 ## Next steps
 
 <CardGroup>
-  <Card title="Compaction cookbook" icon="book" href="https://platform.claude.com/cookbook">
-    Explore practical examples and implementations in the cookbook.
+  <Card title="Session memory compaction cookbook" icon="book" href="https://platform.claude.com/cookbook/misc-session-memory-compaction">
+    Explore a practical implementation that manages long-running conversations with instant session memory compaction using background threading and prompt caching.
   </Card>
   <Card title="Context windows" icon="arrows-maximize" href="/docs/en/build-with-claude/context-windows">
     Learn about context window sizes and management strategies.
