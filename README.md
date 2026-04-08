@@ -7,7 +7,7 @@ This repository is auto-generated and updated by CI from the source `llms.txt` i
 - Site: [Claude Platform Docs](https://platform.claude.com)
 - `llms.txt`: [https://platform.claude.com/llms.txt](https://platform.claude.com/llms.txt)
 - Sync schedule: Hourly at :42 UTC
-- Tracked Markdown documents: 903
+- Tracked Markdown documents: 875
 - Skipped non-Markdown URLs: 1
 
 ## How It Works
@@ -20,9 +20,9 @@ This repository is auto-generated and updated by CI from the source `llms.txt` i
 
 | Release | Published | Link |
 | --- | --- | --- |
+| `archive-20260408T235548Z` | 2026-04-08 23:55 UTC | [Agent SDK docs removed; memory guide clarified](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260408T235548Z) |
 | `archive-20260408T200305Z` | 2026-04-08 20:03 UTC | [CLI install docs now split macOS and Linux/WSL guidance](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260408T200305Z) |
 | `archive-20260408T170530Z` | 2026-04-08 17:08 UTC | [Claude Managed Agents and CLI Docs](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260408T170530Z) |
 | `archive-20260407T225836Z` | 2026-04-07 22:59 UTC | [Vertex AI Multi-Region Endpoint Docs](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260407T225836Z) |
 | `archive-20260407T215833Z` | 2026-04-07 21:59 UTC | [Agent SDK behavior clarifications](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260407T215833Z) |
 | `archive-20260407T200132Z` | 2026-04-07 20:02 UTC | [Claude in Amazon Bedrock Preview Docs](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260407T200132Z) |
-| `archive-20260407T180352Z` | 2026-04-07 18:06 UTC | [User Profiles Beta and Mythos Preview Updates](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260407T180352Z) |
