@@ -20,9 +20,9 @@ This repository is auto-generated and updated by CI from the source `llms.txt` i
 
 | Release | Published | Link |
 | --- | --- | --- |
-| `archive-20260408T170530Z` | 2026-04-08 17:05 UTC | [Claude Managed Agents and CLI Docs](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260408T170530Z) |
+| `archive-20260408T200305Z` | 2026-04-08 20:03 UTC | [CLI install docs now split macOS and Linux/WSL guidance](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260408T200305Z) |
+| `archive-20260408T170530Z` | 2026-04-08 17:08 UTC | [Claude Managed Agents and CLI Docs](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260408T170530Z) |
 | `archive-20260407T225836Z` | 2026-04-07 22:59 UTC | [Vertex AI Multi-Region Endpoint Docs](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260407T225836Z) |
 | `archive-20260407T215833Z` | 2026-04-07 21:59 UTC | [Agent SDK behavior clarifications](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260407T215833Z) |
 | `archive-20260407T200132Z` | 2026-04-07 20:02 UTC | [Claude in Amazon Bedrock Preview Docs](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260407T200132Z) |
 | `archive-20260407T180352Z` | 2026-04-07 18:06 UTC | [User Profiles Beta and Mythos Preview Updates](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260407T180352Z) |
-| `archive-20260406T215355Z` | 2026-04-06 21:54 UTC | [Prefilling guidance now points to Sonnet 4.5](https://github.com/f-pisani/claude-platform-docs-archive/releases/tag/archive-20260406T215355Z) |
