@@ -12,7 +12,7 @@ https://platform.claude.com
 
 The full documentation is available in the following languages on https://platform.claude.com/docs:
 
-- English (en) - 1061 pages - /docs - Content included below
+- English (en) - 1062 pages - /docs - Content included below
 - German (Deutsch) (de) - 144 pages - /docs/de - Visit website for content
 - Spanish (Español) (es) - 144 pages - /docs/es - Visit website for content
 - French (Français) (fr) - 144 pages - /docs/fr - Visit website for content
@@ -102,6 +102,7 @@ The full documentation is available in the following languages on https://platfo
 - [Text editor tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/text-editor-tool.md)
 - [Ticket routing](https://platform.claude.com/docs/en/about-claude/use-case-guides/ticket-routing.md)
 - [Token counting](https://platform.claude.com/docs/en/build-with-claude/token-counting.md)
+- [Tool reference](https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-reference.md)
 - [Tool search](https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-search-tool.md) - Tool search tool
 - [Tools](https://platform.claude.com/docs/en/managed-agents/tools.md)
 - [Using memory](https://platform.claude.com/docs/en/managed-agents/memory.md) - Using agent memory
