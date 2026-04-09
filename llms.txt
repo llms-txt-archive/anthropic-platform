@@ -13,17 +13,17 @@ https://platform.claude.com
 The full documentation is available in the following languages on https://platform.claude.com/docs:
 
 - English (en) - 1060 pages - /docs - Content included below
-- German (Deutsch) (de) - 133 pages - /docs/de - Visit website for content
-- Spanish (Español) (es) - 133 pages - /docs/es - Visit website for content
-- French (Français) (fr) - 133 pages - /docs/fr - Visit website for content
-- Italian (Italiano) (it) - 133 pages - /docs/it - Visit website for content
-- Japanese (日本語) (ja) - 133 pages - /docs/ja - Visit website for content
-- Korean (한국어) (ko) - 133 pages - /docs/ko - Visit website for content
-- Portuguese (Português) (pt-BR) - 133 pages - /docs/pt-BR - Visit website for content
-- Russian (Русский) (ru) - 133 pages - /docs/ru - Visit website for content
-- Chinese Simplified (简体中文) (zh-CN) - 133 pages - /docs/zh-CN - Visit website for content
-- Chinese Traditional (繁體中文) (zh-TW) - 133 pages - /docs/zh-TW - Visit website for content
-- Indonesian (Bahasa Indonesia) (id) - 133 pages - /docs/id - Visit website for content
+- German (Deutsch) (de) - 144 pages - /docs/de - Visit website for content
+- Spanish (Español) (es) - 144 pages - /docs/es - Visit website for content
+- French (Français) (fr) - 144 pages - /docs/fr - Visit website for content
+- Italian (Italiano) (it) - 144 pages - /docs/it - Visit website for content
+- Japanese (日本語) (ja) - 144 pages - /docs/ja - Visit website for content
+- Korean (한국어) (ko) - 144 pages - /docs/ko - Visit website for content
+- Portuguese (Português) (pt-BR) - 144 pages - /docs/pt-BR - Visit website for content
+- Russian (Русский) (ru) - 144 pages - /docs/ru - Visit website for content
+- Chinese Simplified (简体中文) (zh-CN) - 144 pages - /docs/zh-CN - Visit website for content
+- Chinese Traditional (繁體中文) (zh-TW) - 144 pages - /docs/zh-TW - Visit website for content
+- Indonesian (Bahasa Indonesia) (id) - 144 pages - /docs/id - Visit website for content
 
 ---
 
