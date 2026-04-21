@@ -20,9 +20,9 @@ This repository is auto-generated and updated by CI from the source `llms.txt` i
 
 | Release | Published | Link |
 | --- | --- | --- |
-| `archive-20260421T043650Z` | 2026-04-21 04:36 UTC | [Admin API examples and member role updates](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260421T043650Z) |
+| `archive-20260421T213057Z` | 2026-04-21 21:30 UTC | [Managed Agents Idle Session Resumption](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260421T213057Z) |
+| `archive-20260421T043650Z` | 2026-04-21 04:37 UTC | [Admin API examples and member role updates](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260421T043650Z) |
 | `archive-20260420T192425Z` | 2026-04-20 19:27 UTC | [Claude Opus 4.7 and User Profiles Beta](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260420T192425Z) |
 | `archive-20260410T195651Z` | 2026-04-10 19:58 UTC | [Bedrock Preview Docs and Structured Outputs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260410T195651Z) |
 | `archive-20260410T170242Z` | 2026-04-10 17:03 UTC | [Code execution compatibility tables expanded](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260410T170242Z) |
 | `archive-20260410T023515Z` | 2026-04-10 02:36 UTC | [Java SDK and Structured Outputs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260410T023515Z) |
-| `archive-20260409T225959Z` | 2026-04-09 23:02 UTC | [Advisor Tool Beta Docs Expansion](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260409T225959Z) |
