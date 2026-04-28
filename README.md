@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260426T011420Z` | 2026-04-26 01:14 UTC | [Managed Agent Memory Limits Simplified](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260426T011420Z) |
+| `archive-20260428T012317Z` | 2026-04-28 01:23 UTC | [Model-specific thinking defaults and SDK example refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260428T012317Z) |
+| `archive-20260426T011420Z` | 2026-04-26 01:15 UTC | [Managed Agent Memory Limits Simplified](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260426T011420Z) |
 | `archive-20260425T010644Z` | 2026-04-25 01:08 UTC | [Rate Limits API and Tool Use Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260425T010644Z) |
 | `archive-20260424T155229Z` | 2026-04-24 15:53 UTC | [Refresh SDK and CLI setup versions](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260424T155229Z) |
 | `archive-20260424T011353Z` | 2026-04-24 01:15 UTC | [Managed Agents Memory Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260424T011353Z) |
 | `archive-20260423T195439Z` | 2026-04-23 19:56 UTC | [Memory Store Session Docs and Beta API Cleanup](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260423T195439Z) |
-| `archive-20260422T184818Z` | 2026-04-22 18:48 UTC | [Vision docs add image compression guidance](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260422T184818Z) |
