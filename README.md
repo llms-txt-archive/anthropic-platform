@@ -7,7 +7,7 @@ Every change to the upstream docs produces a git commit and a GitHub release, so
 | | |
 |---|---|
 | **Source** | [https://platform.claude.com/llms.txt](https://platform.claude.com/llms.txt) |
-| **Documents** | 1046 Markdown files |
+| **Documents** | 1127 Markdown files |
 | **Schedule** | Hourly at :42 UTC |
 
 ## How it works
@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260505T185823Z` | 2026-05-05 18:58 UTC | [PHP file docs refreshed](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260505T185823Z) |
+| `archive-20260506T050144Z` | 2026-05-06 05:01 UTC | [Managed Agents Docs Expand, Admin Guides Move](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260506T050144Z) |
+| `archive-20260505T185823Z` | 2026-05-05 18:59 UTC | [PHP file docs refreshed](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260505T185823Z) |
 | `archive-20260504T190822Z` | 2026-05-04 19:09 UTC | [Authentication and WIF Docs Expansion](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260504T190822Z) |
 | `archive-20260502T044808Z` | 2026-05-02 04:49 UTC | [Managed Agents docs expanded as standalone reference sections are removed](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260502T044808Z) |
 | `archive-20260430T223723Z` | 2026-04-30 22:39 UTC | [Beta user profiles and clearer memory/message references](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260430T223723Z) |
 | `archive-20260430T012352Z` | 2026-04-30 01:24 UTC | [Prompt Cache Pre-Warming and Zero-Token Limits](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260430T012352Z) |
-| `archive-20260428T012317Z` | 2026-04-28 01:24 UTC | [Model-specific thinking defaults and SDK example refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260428T012317Z) |
