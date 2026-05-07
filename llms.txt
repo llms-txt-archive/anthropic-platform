@@ -12,7 +12,7 @@ https://platform.claude.com
 
 The full documentation is available in the following languages on https://platform.claude.com/docs:
 
-- English (en) - 1357 pages - /docs - Content included below
+- English (en) - 1367 pages - /docs - Content included below
 - German (Deutsch) (de) - 132 pages - /docs/de - Visit website for content
 - Spanish (Español) (es) - 132 pages - /docs/es - Visit website for content
 - French (Français) (fr) - 132 pages - /docs/fr - Visit website for content
@@ -1396,6 +1396,16 @@ The full documentation is available in the following languages on https://platfo
 - [Versions (Beta) (terraform)](https://platform.claude.com/docs/en/api/terraform/beta/skills/versions.md)
 - [Versions (Beta) (TypeScript)](https://platform.claude.com/docs/en/api/typescript/beta/agents/versions.md)
 - [Versions (Beta) (TypeScript)](https://platform.claude.com/docs/en/api/typescript/beta/skills/versions.md)
+- [Webhooks (Beta)](https://platform.claude.com/docs/en/api/beta/webhooks.md)
+- [Webhooks (Beta) (cli)](https://platform.claude.com/docs/en/api/cli/beta/webhooks.md)
+- [Webhooks (Beta) (csharp)](https://platform.claude.com/docs/en/api/csharp/beta/webhooks.md)
+- [Webhooks (Beta) (Go)](https://platform.claude.com/docs/en/api/go/beta/webhooks.md)
+- [Webhooks (Beta) (Java)](https://platform.claude.com/docs/en/api/java/beta/webhooks.md)
+- [Webhooks (Beta) (php)](https://platform.claude.com/docs/en/api/php/beta/webhooks.md)
+- [Webhooks (Beta) (Python)](https://platform.claude.com/docs/en/api/python/beta/webhooks.md)
+- [Webhooks (Beta) (Ruby)](https://platform.claude.com/docs/en/api/ruby/beta/webhooks.md)
+- [Webhooks (Beta) (terraform)](https://platform.claude.com/docs/en/api/terraform/beta/webhooks.md)
+- [Webhooks (Beta) (TypeScript)](https://platform.claude.com/docs/en/api/typescript/beta/webhooks.md)
 - [Workspaces](https://platform.claude.com/docs/en/api/admin/workspaces.md)
 
 ---
