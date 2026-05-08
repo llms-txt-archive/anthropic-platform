@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260507T080746Z` | 2026-05-07 08:07 UTC | [Beta Webhook References Expanded](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260507T080746Z) |
+| `archive-20260508T165735Z` | 2026-05-08 16:57 UTC | [Vertex AI Structured Outputs Docs Update](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260508T165735Z) |
+| `archive-20260507T080746Z` | 2026-05-07 08:09 UTC | [Beta Webhook References Expanded](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260507T080746Z) |
 | `archive-20260507T050421Z` | 2026-05-07 05:06 UTC | [Beta webhook references and multiagent rename](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260507T050421Z) |
 | `archive-20260506T171443Z` | 2026-05-06 17:17 UTC | [Managed Agents docs restructure](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260506T171443Z) |
 | `archive-20260506T050144Z` | 2026-05-06 05:04 UTC | [Managed Agents Docs Expand, Admin Guides Move](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260506T050144Z) |
 | `archive-20260505T185823Z` | 2026-05-05 18:59 UTC | [PHP file docs refreshed](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260505T185823Z) |
-| `archive-20260504T190822Z` | 2026-05-04 19:09 UTC | [Authentication and WIF Docs Expansion](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260504T190822Z) |
