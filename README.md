@@ -7,7 +7,7 @@ Every change to the upstream docs produces a git commit and a GitHub release, so
 | | |
 |---|---|
 | **Source** | [https://platform.claude.com/llms.txt](https://platform.claude.com/llms.txt) |
-| **Documents** | 1216 Markdown files |
+| **Documents** | 1168 Markdown files |
 | **Schedule** | Hourly at :42 UTC |
 
 ## How it works
@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260511T162030Z` | 2026-05-11 16:20 UTC | [Claude Platform on AWS and API Reference Expansion](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260511T162030Z) |
+| `archive-20260511T182532Z` | 2026-05-11 18:25 UTC | [Managed Agents Split and Major Docs Prune](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260511T182532Z) |
+| `archive-20260511T162030Z` | 2026-05-11 16:22 UTC | [Claude Platform on AWS and API Reference Expansion](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260511T162030Z) |
 | `archive-20260509T045707Z` | 2026-05-09 04:58 UTC | [Thinking, Tool Search, and Managed Agents Clarified](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260509T045707Z) |
 | `archive-20260508T214214Z` | 2026-05-08 21:44 UTC | [Compliance API Docs and Admin Split](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260508T214214Z) |
 | `archive-20260508T185756Z` | 2026-05-08 18:59 UTC | [SPIFFE WIF and JWKS reference refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260508T185756Z) |
 | `archive-20260508T165735Z` | 2026-05-08 16:58 UTC | [Vertex AI Structured Outputs Docs Update](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260508T165735Z) |
-| `archive-20260507T080746Z` | 2026-05-07 08:09 UTC | [Beta Webhook References Expanded](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260507T080746Z) |
