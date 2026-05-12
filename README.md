@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260511T215430Z` | 2026-05-11 21:54 UTC | [Managed Agents Split and Legacy Docs Trimmed](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260511T215430Z) |
+| `archive-20260512T182704Z` | 2026-05-12 18:27 UTC | [Fast Mode Docs Add Claude Opus 4.7](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260512T182704Z) |
+| `archive-20260511T215430Z` | 2026-05-11 21:56 UTC | [Managed Agents Split and Legacy Docs Trimmed](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260511T215430Z) |
 | `archive-20260511T202511Z` | 2026-05-11 20:26 UTC | [Managed Agents, SDKs, and Eval Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260511T202511Z) |
 | `archive-20260511T182532Z` | 2026-05-11 18:26 UTC | [Managed Agents Split and Major Docs Prune](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260511T182532Z) |
 | `archive-20260511T162030Z` | 2026-05-11 16:22 UTC | [Claude Platform on AWS and API Reference Expansion](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260511T162030Z) |
 | `archive-20260509T045707Z` | 2026-05-09 04:58 UTC | [Thinking, Tool Search, and Managed Agents Clarified](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260509T045707Z) |
-| `archive-20260508T214214Z` | 2026-05-08 21:44 UTC | [Compliance API Docs and Admin Split](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260508T214214Z) |
