@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260518T215205Z` | 2026-05-18 21:52 UTC | [Compaction guide adds tool-failure guidance](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260518T215205Z) |
+| `archive-20260518T234534Z` | 2026-05-18 23:45 UTC | [Computer Use guidance expanded](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260518T234534Z) |
+| `archive-20260518T215205Z` | 2026-05-18 21:53 UTC | [Compaction guide adds tool-failure guidance](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260518T215205Z) |
 | `archive-20260518T174930Z` | 2026-05-18 17:50 UTC | [Cache Diagnostics and Compliance API Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260518T174930Z) |
 | `archive-20260516T050147Z` | 2026-05-16 05:02 UTC | [Broader Tool Runner coverage and CLI login updates](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260516T050147Z) |
 | `archive-20260515T233921Z` | 2026-05-15 23:40 UTC | [API Key Onboarding and Version Reference Corrections](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260515T233921Z) |
 | `archive-20260515T214243Z` | 2026-05-15 21:44 UTC | [Tool Runner Docs Narrowed to Supported SDKs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260515T214243Z) |
-| `archive-20260515T200815Z` | 2026-05-15 20:09 UTC | [Tool Runner Coverage Expanded](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260515T200815Z) |
