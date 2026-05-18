@@ -7,7 +7,7 @@ Every change to the upstream docs produces a git commit and a GitHub release, so
 | | |
 |---|---|
 | **Source** | [https://platform.claude.com/llms.txt](https://platform.claude.com/llms.txt) |
-| **Documents** | 1168 Markdown files |
+| **Documents** | 1169 Markdown files |
 | **Schedule** | Hourly at :42 UTC |
 
 ## How it works
@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260516T050147Z` | 2026-05-16 05:01 UTC | [Broader Tool Runner coverage and CLI login updates](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260516T050147Z) |
+| `archive-20260518T174930Z` | 2026-05-18 17:49 UTC | [Cache Diagnostics and Compliance API Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260518T174930Z) |
+| `archive-20260516T050147Z` | 2026-05-16 05:02 UTC | [Broader Tool Runner coverage and CLI login updates](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260516T050147Z) |
 | `archive-20260515T233921Z` | 2026-05-15 23:40 UTC | [API Key Onboarding and Version Reference Corrections](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260515T233921Z) |
 | `archive-20260515T214243Z` | 2026-05-15 21:44 UTC | [Tool Runner Docs Narrowed to Supported SDKs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260515T214243Z) |
 | `archive-20260515T200815Z` | 2026-05-15 20:09 UTC | [Tool Runner Coverage Expanded](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260515T200815Z) |
 | `archive-20260515T155241Z` | 2026-05-15 15:53 UTC | [CLI onboarding and SDK reference refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260515T155241Z) |
-| `archive-20260513T225028Z` | 2026-05-13 22:51 UTC | [Lifecycle and Thinking Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260513T225028Z) |
