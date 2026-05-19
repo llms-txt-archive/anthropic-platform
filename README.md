@@ -7,7 +7,7 @@ Every change to the upstream docs produces a git commit and a GitHub release, so
 | | |
 |---|---|
 | **Source** | [https://platform.claude.com/llms.txt](https://platform.claude.com/llms.txt) |
-| **Documents** | 1270 Markdown files |
+| **Documents** | 1275 Markdown files |
 | **Schedule** | Hourly at :42 UTC |
 
 ## How it works
@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260519T084920Z` | 2026-05-19 08:49 UTC | [MCP Tunnels and Self-Hosted Sandbox Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260519T084920Z) |
+| `archive-20260519T182730Z` | 2026-05-19 18:27 UTC | [Claude Platform Compliance Docs: Metadata Pages and Schema Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260519T182730Z) |
+| `archive-20260519T084920Z` | 2026-05-19 08:52 UTC | [MCP Tunnels and Self-Hosted Sandbox Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260519T084920Z) |
 | `archive-20260518T234534Z` | 2026-05-18 23:46 UTC | [Computer Use guidance expanded](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260518T234534Z) |
 | `archive-20260518T215205Z` | 2026-05-18 21:53 UTC | [Compaction guide adds tool-failure guidance](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260518T215205Z) |
 | `archive-20260518T174930Z` | 2026-05-18 17:50 UTC | [Cache Diagnostics and Compliance API Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260518T174930Z) |
 | `archive-20260516T050147Z` | 2026-05-16 05:02 UTC | [Broader Tool Runner coverage and CLI login updates](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260516T050147Z) |
-| `archive-20260515T233921Z` | 2026-05-15 23:40 UTC | [API Key Onboarding and Version Reference Corrections](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260515T233921Z) |
