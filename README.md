@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260519T234619Z` | 2026-05-19 23:46 UTC | [Expanded SDK Coverage for Skills and Tools](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260519T234619Z) |
+| `archive-20260520T045302Z` | 2026-05-20 04:53 UTC | [Setup Snippet Version Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260520T045302Z) |
+| `archive-20260519T234619Z` | 2026-05-19 23:47 UTC | [Expanded SDK Coverage for Skills and Tools](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260519T234619Z) |
 | `archive-20260519T182730Z` | 2026-05-19 18:29 UTC | [Claude Platform Compliance Docs: Metadata Pages and Schema Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260519T182730Z) |
 | `archive-20260519T084920Z` | 2026-05-19 08:52 UTC | [MCP Tunnels and Self-Hosted Sandbox Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260519T084920Z) |
 | `archive-20260518T234534Z` | 2026-05-18 23:46 UTC | [Computer Use guidance expanded](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260518T234534Z) |
 | `archive-20260518T215205Z` | 2026-05-18 21:53 UTC | [Compaction guide adds tool-failure guidance](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260518T215205Z) |
-| `archive-20260518T174930Z` | 2026-05-18 17:50 UTC | [Cache Diagnostics and Compliance API Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260518T174930Z) |
