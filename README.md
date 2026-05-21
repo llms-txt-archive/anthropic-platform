@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260520T230045Z` | 2026-05-20 23:00 UTC | [Platform availability and retention clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260520T230045Z) |
+| `archive-20260521T055451Z` | 2026-05-21 05:54 UTC | [Tool Streaming Docs Expansion](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260521T055451Z) |
+| `archive-20260520T230045Z` | 2026-05-20 23:01 UTC | [Platform availability and retention clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260520T230045Z) |
 | `archive-20260520T190833Z` | 2026-05-20 19:09 UTC | [Claude Code workspace and multiagent MCP docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260520T190833Z) |
 | `archive-20260520T045302Z` | 2026-05-20 04:54 UTC | [Setup Snippet Version Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260520T045302Z) |
 | `archive-20260519T234619Z` | 2026-05-19 23:47 UTC | [Expanded SDK Coverage for Skills and Tools](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260519T234619Z) |
 | `archive-20260519T182730Z` | 2026-05-19 18:29 UTC | [Claude Platform Compliance Docs: Metadata Pages and Schema Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260519T182730Z) |
-| `archive-20260519T084920Z` | 2026-05-19 08:52 UTC | [MCP Tunnels and Self-Hosted Sandbox Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260519T084920Z) |
