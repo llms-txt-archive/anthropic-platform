@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260528T175408Z` | 2026-05-28 17:54 UTC | [Mid-Conversation System Messages and Opus 4.8 Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260528T175408Z) |
+| `archive-20260528T205939Z` | 2026-05-28 20:59 UTC | [Message Batches and Opus 4.8 Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260528T205939Z) |
+| `archive-20260528T175408Z` | 2026-05-28 17:57 UTC | [Mid-Conversation System Messages and Opus 4.8 Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260528T175408Z) |
 | `archive-20260528T012545Z` | 2026-05-28 01:26 UTC | [Batch processing guidance expanded](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260528T012545Z) |
 | `archive-20260522T202519Z` | 2026-05-22 20:28 UTC | [Admin and Beta API Reference Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260522T202519Z) |
 | `archive-20260521T225230Z` | 2026-05-21 22:53 UTC | [MCP tunnels proxy naming refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260521T225230Z) |
 | `archive-20260521T055451Z` | 2026-05-21 05:55 UTC | [Tool Streaming Docs Expansion](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260521T055451Z) |
-| `archive-20260520T230045Z` | 2026-05-20 23:01 UTC | [Platform availability and retention clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260520T230045Z) |
