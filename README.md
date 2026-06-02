@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260601T211847Z` | 2026-06-01 21:18 UTC | [CMEK, External Keys, and MCP Tunnels Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260601T211847Z) |
+| `archive-20260602T203043Z` | 2026-06-02 20:30 UTC | [Advisor Caps and Opus 4.8 Coverage](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260602T203043Z) |
+| `archive-20260601T211847Z` | 2026-06-01 21:21 UTC | [CMEK, External Keys, and MCP Tunnels Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260601T211847Z) |
 | `archive-20260530T013134Z` | 2026-05-30 01:32 UTC | [Clarified Tool Use and Managed Agents](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260530T013134Z) |
 | `archive-20260529T175706Z` | 2026-05-29 17:58 UTC | [Managed Agents Example Corrections](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260529T175706Z) |
 | `archive-20260529T134926Z` | 2026-05-29 13:51 UTC | [Managed Agents Sandbox and Caching Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260529T134926Z) |
 | `archive-20260528T230256Z` | 2026-05-28 23:05 UTC | [NextOpus Rollout and Orchestration Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260528T230256Z) |
-| `archive-20260528T205939Z` | 2026-05-28 21:01 UTC | [Message Batches and Opus 4.8 Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260528T205939Z) |
