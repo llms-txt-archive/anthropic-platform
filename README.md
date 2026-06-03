@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260602T225140Z` | 2026-06-02 22:51 UTC | [Clarified billing notes for streaming refusals](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260602T225140Z) |
+| `archive-20260603T204242Z` | 2026-06-03 20:42 UTC | [Orchestration Example and Limits Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260603T204242Z) |
+| `archive-20260602T225140Z` | 2026-06-02 22:52 UTC | [Clarified billing notes for streaming refusals](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260602T225140Z) |
 | `archive-20260602T203043Z` | 2026-06-02 20:32 UTC | [Advisor Caps and Opus 4.8 Coverage](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260602T203043Z) |
 | `archive-20260601T211847Z` | 2026-06-01 21:21 UTC | [CMEK, External Keys, and MCP Tunnels Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260601T211847Z) |
 | `archive-20260530T013134Z` | 2026-05-30 01:32 UTC | [Clarified Tool Use and Managed Agents](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260530T013134Z) |
 | `archive-20260529T175706Z` | 2026-05-29 17:58 UTC | [Managed Agents Example Corrections](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260529T175706Z) |
-| `archive-20260529T134926Z` | 2026-05-29 13:51 UTC | [Managed Agents Sandbox and Caching Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260529T134926Z) |
