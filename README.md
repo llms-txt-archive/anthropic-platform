@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260604T173519Z` | 2026-06-04 17:35 UTC | [Claude Platform docs clarify tool behavior, PDF citations, and compliance key setup](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260604T173519Z) |
+| `archive-20260604T235025Z` | 2026-06-04 23:50 UTC | [Dreaming docs clarify instruction steering](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260604T235025Z) |
+| `archive-20260604T173519Z` | 2026-06-04 17:36 UTC | [Claude Platform docs clarify tool behavior, PDF citations, and compliance key setup](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260604T173519Z) |
 | `archive-20260603T204242Z` | 2026-06-03 20:44 UTC | [Orchestration Example and Limits Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260603T204242Z) |
 | `archive-20260602T225140Z` | 2026-06-02 22:52 UTC | [Clarified billing notes for streaming refusals](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260602T225140Z) |
 | `archive-20260602T203043Z` | 2026-06-02 20:32 UTC | [Advisor Caps and Opus 4.8 Coverage](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260602T203043Z) |
 | `archive-20260601T211847Z` | 2026-06-01 21:21 UTC | [CMEK, External Keys, and MCP Tunnels Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260601T211847Z) |
-| `archive-20260530T013134Z` | 2026-05-30 01:32 UTC | [Clarified Tool Use and Managed Agents](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260530T013134Z) |
