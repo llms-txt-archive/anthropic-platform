@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260609T221424Z` | 2026-06-09 22:14 UTC | [Managed Agent Deployments and Runtime Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260609T221424Z) |
+| `archive-20260610T050636Z` | 2026-06-10 05:06 UTC | [CMEK and Retention Guidance Clarified](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260610T050636Z) |
+| `archive-20260609T221424Z` | 2026-06-09 22:16 UTC | [Managed Agent Deployments and Runtime Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260609T221424Z) |
 | `archive-20260609T183719Z` | 2026-06-09 18:39 UTC | [Fallback and Claude 5 Documentation](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260609T183719Z) |
 | `archive-20260608T190926Z` | 2026-06-08 19:10 UTC | [SDK Reference Restructure and Agent Doc Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260608T190926Z) |
 | `archive-20260605T211238Z` | 2026-06-05 21:13 UTC | [Claude Opus 4.1 deprecation labels and cloud lifecycle cleanup](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260605T211238Z) |
 | `archive-20260604T235025Z` | 2026-06-04 23:51 UTC | [Dreaming docs clarify instruction steering](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260604T235025Z) |
-| `archive-20260604T173519Z` | 2026-06-04 17:36 UTC | [Claude Platform docs clarify tool behavior, PDF citations, and compliance key setup](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260604T173519Z) |
