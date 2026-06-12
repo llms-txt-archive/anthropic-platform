@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
+| `archive-20260612T112926Z` | 2026-06-12 11:29 UTC | [Azure WIF Token Version Clarification](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260612T112926Z) |
 | `archive-20260612T020002Z` | 2026-06-12 02:00 UTC | [AWS sandbox endpoint caveat removed](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260612T020002Z) |
 | `archive-20260611T210850Z` | 2026-06-11 21:10 UTC | [New Compliance APIs and WIF Admin Guidance](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260611T210850Z) |
 | `archive-20260611T051513Z` | 2026-06-11 05:16 UTC | [Vision docs clarify image costs and coordinate handling](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260611T051513Z) |
 | `archive-20260610T195735Z` | 2026-06-10 19:59 UTC | [Advisor, Fallback, and Claude 5 Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260610T195735Z) |
 | `archive-20260610T050636Z` | 2026-06-10 05:07 UTC | [CMEK and Retention Guidance Clarified](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260610T050636Z) |
-| `archive-20260609T221424Z` | 2026-06-09 22:16 UTC | [Managed Agent Deployments and Runtime Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260609T221424Z) |
