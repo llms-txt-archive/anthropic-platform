@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260612T193458Z` | 2026-06-12 19:34 UTC | [C# Skill Download Docs Trim Fallback Enums](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260612T193458Z) |
+| `archive-20260612T212008Z` | 2026-06-12 21:20 UTC | [C# Skill Download Reference Adds Fallback Values](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260612T212008Z) |
+| `archive-20260612T193458Z` | 2026-06-12 19:35 UTC | [C# Skill Download Docs Trim Fallback Enums](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260612T193458Z) |
 | `archive-20260612T172711Z` | 2026-06-12 17:28 UTC | [Azure WIF Clarifications and GKE Sandbox Link](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260612T172711Z) |
 | `archive-20260612T112926Z` | 2026-06-12 11:29 UTC | [Azure WIF Token Version Clarification](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260612T112926Z) |
 | `archive-20260612T020002Z` | 2026-06-12 02:00 UTC | [AWS sandbox endpoint caveat removed](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260612T020002Z) |
 | `archive-20260611T210850Z` | 2026-06-11 21:10 UTC | [New Compliance APIs and WIF Admin Guidance](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260611T210850Z) |
-| `archive-20260611T051513Z` | 2026-06-11 05:16 UTC | [Vision docs clarify image costs and coordinate handling](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260611T051513Z) |
