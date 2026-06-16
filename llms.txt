@@ -12,7 +12,7 @@ https://platform.claude.com
 
 The full documentation is available in the following languages on https://platform.claude.com/docs:
 
-- English (en) - 1698 pages - /docs - Content included below
+- English (en) - 1699 pages - /docs - Content included below
 - German (Deutsch) (de) - 133 pages - /docs/de - Visit website for content
 - Spanish (Español) (es) - 133 pages - /docs/es - Visit website for content
 - French (Français) (fr) - 133 pages - /docs/fr - Visit website for content
@@ -160,6 +160,7 @@ The full documentation is available in the following languages on https://platfo
 - [Activity Feed](https://platform.claude.com/docs/en/manage-claude/compliance-activity-feed.md) - Query the Activity Feed
 - [Rate Limits API](https://platform.claude.com/docs/en/manage-claude/rate-limits-api.md)
 - [Chats, files, and projects](https://platform.claude.com/docs/en/manage-claude/compliance-content-data.md) - Retrieve and delete chats, files, and projects
+- [Spend Limits API](https://platform.claude.com/docs/en/manage-claude/spend-limits-api.md)
 - [Usage and Cost API](https://platform.claude.com/docs/en/manage-claude/usage-cost-api.md)
 - [AWS](https://platform.claude.com/docs/en/manage-claude/wif-providers/aws.md) - Use WIF with AWS
 - [GitHub Actions](https://platform.claude.com/docs/en/manage-claude/wif-providers/github-actions.md) - Use WIF with GitHub Actions

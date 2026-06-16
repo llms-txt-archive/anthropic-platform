@@ -7,7 +7,7 @@ Every change to the upstream docs produces a git commit and a GitHub release, so
 | | |
 |---|---|
 | **Source** | [https://platform.claude.com/llms.txt](https://platform.claude.com/llms.txt) |
-| **Documents** | 1547 Markdown files |
+| **Documents** | 1548 Markdown files |
 | **Schedule** | Hourly at :42 UTC |
 
 ## How it works
@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
+| `archive-20260616T213613Z` | 2026-06-16 21:36 UTC | [Spend Limits API doc added](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260616T213613Z) |
 | `archive-20260615T220504Z` | 2026-06-15 22:05 UTC | [CMEK docs split Platform and Enterprise setup](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260615T220504Z) |
 | `archive-20260615T193331Z` | 2026-06-15 19:34 UTC | [Claude 4 retirement notes and guide navigation refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260615T193331Z) |
 | `archive-20260615T144846Z` | 2026-06-15 14:49 UTC | [Expanded Stop Reason Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260615T144846Z) |
 | `archive-20260613T015231Z` | 2026-06-13 01:53 UTC | [Analytics API Guidance Added to Manage Claude Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260613T015231Z) |
 | `archive-20260612T212008Z` | 2026-06-12 21:20 UTC | [C# Skill Download Reference Adds Fallback Values](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260612T212008Z) |
-| `archive-20260612T193458Z` | 2026-06-12 19:35 UTC | [C# Skill Download Docs Trim Fallback Enums](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260612T193458Z) |
