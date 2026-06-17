@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260617T081532Z` | 2026-06-17 08:15 UTC | [Messages Guide Next Steps Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260617T081532Z) |
+| `archive-20260617T191214Z` | 2026-06-17 19:12 UTC | [Analytics guides now point to Admin API reference](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260617T191214Z) |
+| `archive-20260617T081532Z` | 2026-06-17 08:16 UTC | [Messages Guide Next Steps Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260617T081532Z) |
 | `archive-20260617T020611Z` | 2026-06-17 02:07 UTC | [Admin API Reference Split and Usage Updates](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260617T020611Z) |
 | `archive-20260616T213613Z` | 2026-06-16 21:36 UTC | [Spend Limits API doc added](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260616T213613Z) |
 | `archive-20260615T220504Z` | 2026-06-15 22:05 UTC | [CMEK docs split Platform and Enterprise setup](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260615T220504Z) |
 | `archive-20260615T193331Z` | 2026-06-15 19:34 UTC | [Claude 4 retirement notes and guide navigation refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260615T193331Z) |
-| `archive-20260615T144846Z` | 2026-06-15 14:49 UTC | [Expanded Stop Reason Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260615T144846Z) |
