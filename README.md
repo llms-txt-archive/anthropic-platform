@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260618T232416Z` | 2026-06-18 23:24 UTC | [Web Tool Controls and Compliance Coverage](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260618T232416Z) |
+| `archive-20260619T182159Z` | 2026-06-19 18:21 UTC | [Multilingual Support and Build Guides Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260619T182159Z) |
+| `archive-20260618T232416Z` | 2026-06-18 23:25 UTC | [Web Tool Controls and Compliance Coverage](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260618T232416Z) |
 | `archive-20260618T174803Z` | 2026-06-18 17:48 UTC | [Admin Key Setup and Analytics Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260618T174803Z) |
 | `archive-20260617T191214Z` | 2026-06-17 19:12 UTC | [Analytics guides now point to Admin API reference](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260617T191214Z) |
 | `archive-20260617T081532Z` | 2026-06-17 08:16 UTC | [Messages Guide Next Steps Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260617T081532Z) |
 | `archive-20260617T020611Z` | 2026-06-17 02:07 UTC | [Admin API Reference Split and Usage Updates](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260617T020611Z) |
-| `archive-20260616T213613Z` | 2026-06-16 21:36 UTC | [Spend Limits API doc added](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260616T213613Z) |
