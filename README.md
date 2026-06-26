@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260625T211758Z` | 2026-06-25 21:17 UTC | [Vision Split and Google Cloud Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260625T211758Z) |
+| `archive-20260626T210950Z` | 2026-06-26 21:09 UTC | [Compliance coverage and server-tool docs refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260626T210950Z) |
+| `archive-20260625T211758Z` | 2026-06-25 21:19 UTC | [Vision Split and Google Cloud Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260625T211758Z) |
 | `archive-20260623T153928Z` | 2026-06-23 15:39 UTC | [Self-hosted sandboxes now link AWS Lambda MicroVMs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260623T153928Z) |
 | `archive-20260622T185940Z` | 2026-06-22 19:00 UTC | [Stop Reasons, Fallback, and Thinking Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260622T185940Z) |
 | `archive-20260619T182159Z` | 2026-06-19 18:22 UTC | [Multilingual Support and Build Guides Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260619T182159Z) |
 | `archive-20260618T232416Z` | 2026-06-18 23:25 UTC | [Web Tool Controls and Compliance Coverage](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260618T232416Z) |
-| `archive-20260618T174803Z` | 2026-06-18 17:48 UTC | [Admin Key Setup and Analytics Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260618T174803Z) |
