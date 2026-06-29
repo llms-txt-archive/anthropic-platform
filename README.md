@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260629T192526Z` | 2026-06-29 19:25 UTC | [Microsoft Foundry and Skills Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260629T192526Z) |
+| `archive-20260629T224101Z` | 2026-06-29 22:41 UTC | [Microsoft Foundry and Fast Mode Docs Clarified](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260629T224101Z) |
+| `archive-20260629T192526Z` | 2026-06-29 19:26 UTC | [Microsoft Foundry and Skills Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260629T192526Z) |
 | `archive-20260629T143908Z` | 2026-06-29 14:40 UTC | [Compaction, Context Windows, and Tool Search Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260629T143908Z) |
 | `archive-20260627T234114Z` | 2026-06-27 23:42 UTC | [Tool-use docs deepen continuation and memory guidance](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260627T234114Z) |
 | `archive-20260627T081634Z` | 2026-06-27 08:18 UTC | [Tool Use, Fallback, and Managed Agents Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260627T081634Z) |
 | `archive-20260626T210950Z` | 2026-06-26 21:11 UTC | [Compliance coverage and server-tool docs refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260626T210950Z) |
-| `archive-20260625T211758Z` | 2026-06-25 21:19 UTC | [Vision Split and Google Cloud Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260625T211758Z) |
