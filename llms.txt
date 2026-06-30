@@ -123,7 +123,7 @@ The full documentation is available in the following languages on https://platfo
 - [Agent setup](https://platform.claude.com/docs/en/managed-agents/agent-setup.md) - Define your agent
 - [Dreams](https://platform.claude.com/docs/en/managed-agents/dreams.md)
 - [MCP connector](https://platform.claude.com/docs/en/managed-agents/mcp-connector.md)
-- [Multiagent sessions](https://platform.claude.com/docs/en/managed-agents/multi-agent.md)
+- [Multi-agent sessions](https://platform.claude.com/docs/en/managed-agents/multi-agent.md)
 - [Permission policies](https://platform.claude.com/docs/en/managed-agents/permission-policies.md)
 - [Prototype in Console](https://platform.claude.com/docs/en/managed-agents/onboarding.md)
 - [Managed Agents reference](https://platform.claude.com/docs/en/managed-agents/reference.md) - Reference
