@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260705T234558Z` | 2026-07-05 23:45 UTC | [C# Beta Webhooks Reference Rescoped](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260705T234558Z) |
+| `archive-20260706T045955Z` | 2026-07-06 04:59 UTC | [C# Beta Webhooks Expanded](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260706T045955Z) |
+| `archive-20260705T234558Z` | 2026-07-05 23:47 UTC | [C# Beta Webhooks Reference Rescoped](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260705T234558Z) |
 | `archive-20260702T200727Z` | 2026-07-02 20:08 UTC | [Adaptive Thinking Clarified, Voyage Retrieval Options Expanded](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260702T200727Z) |
 | `archive-20260702T181950Z` | 2026-07-02 18:20 UTC | [Web Search and Computer Use Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260702T181950Z) |
 | `archive-20260701T211158Z` | 2026-07-01 21:12 UTC | [Refusal Enum Cleanup and Clearer Starter Output](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260701T211158Z) |
 | `archive-20260701T192340Z` | 2026-07-01 19:25 UTC | [Admin Analytics and Managed Agents Docs Expansion](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260701T192340Z) |
-| `archive-20260630T225625Z` | 2026-06-30 22:57 UTC | [Simplified shell and CLI examples](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260630T225625Z) |
