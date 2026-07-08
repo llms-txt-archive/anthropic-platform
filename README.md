@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260707T220039Z` | 2026-07-07 22:00 UTC | [Compliance API, Foundry, and agent docs refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260707T220039Z) |
+| `archive-20260708T180620Z` | 2026-07-08 18:06 UTC | [Skills Guide Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260708T180620Z) |
+| `archive-20260707T220039Z` | 2026-07-07 22:02 UTC | [Compliance API, Foundry, and agent docs refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260707T220039Z) |
 | `archive-20260706T192256Z` | 2026-07-06 19:24 UTC | [Execution, Files, PDF, and Vision Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260706T192256Z) |
 | `archive-20260706T045955Z` | 2026-07-06 05:01 UTC | [C# Beta Webhooks Expanded](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260706T045955Z) |
 | `archive-20260705T234558Z` | 2026-07-05 23:47 UTC | [C# Beta Webhooks Reference Rescoped](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260705T234558Z) |
 | `archive-20260702T200727Z` | 2026-07-02 20:08 UTC | [Adaptive Thinking Clarified, Voyage Retrieval Options Expanded](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260702T200727Z) |
-| `archive-20260702T181950Z` | 2026-07-02 18:20 UTC | [Web Search and Computer Use Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260702T181950Z) |
