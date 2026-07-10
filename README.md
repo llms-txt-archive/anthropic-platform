@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260710T011520Z` | 2026-07-10 01:15 UTC | [Retention and Managed Agents docs refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260710T011520Z) |
+| `archive-20260710T160601Z` | 2026-07-10 16:06 UTC | [Agent Memory and Beta Reference Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260710T160601Z) |
+| `archive-20260710T011520Z` | 2026-07-10 01:16 UTC | [Retention and Managed Agents docs refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260710T011520Z) |
 | `archive-20260708T180620Z` | 2026-07-08 18:07 UTC | [Skills Guide Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260708T180620Z) |
 | `archive-20260707T220039Z` | 2026-07-07 22:02 UTC | [Compliance API, Foundry, and agent docs refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260707T220039Z) |
 | `archive-20260706T192256Z` | 2026-07-06 19:24 UTC | [Execution, Files, PDF, and Vision Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260706T192256Z) |
 | `archive-20260706T045955Z` | 2026-07-06 05:01 UTC | [C# Beta Webhooks Expanded](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260706T045955Z) |
-| `archive-20260705T234558Z` | 2026-07-05 23:47 UTC | [C# Beta Webhooks Reference Rescoped](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260705T234558Z) |
