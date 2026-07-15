@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
+| `archive-20260715T184455Z` | 2026-07-15 18:44 UTC | [MCP Helper Docs Expanded](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260715T184455Z) |
 | `archive-20260714T233405Z` | 2026-07-14 23:34 UTC | [Bedrock labeling split and Vertex AI doc refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260714T233405Z) |
 | `archive-20260714T165056Z` | 2026-07-14 16:52 UTC | [Claude Enterprise RBAC and User Management Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260714T165056Z) |
 | `archive-20260714T125204Z` | 2026-07-14 12:53 UTC | [Skills, Compliance, and AWS Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260714T125204Z) |
 | `archive-20260710T181202Z` | 2026-07-10 18:12 UTC | [Access Transparency Adds CMEK Preservation Details](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260710T181202Z) |
 | `archive-20260710T160601Z` | 2026-07-10 16:08 UTC | [Agent Memory and Beta Reference Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260710T160601Z) |
-| `archive-20260710T011520Z` | 2026-07-10 01:16 UTC | [Retention and Managed Agents docs refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260710T011520Z) |
