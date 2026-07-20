@@ -7,7 +7,7 @@ Every change to the upstream docs produces a git commit and a GitHub release, so
 | | |
 |---|---|
 | **Source** | [https://platform.claude.com/llms.txt](https://platform.claude.com/llms.txt) |
-| **Documents** | 1737 Markdown files |
+| **Documents** | 1796 Markdown files |
 | **Schedule** | Hourly at :42 UTC |
 
 ## How it works
@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260717T213223Z` | 2026-07-17 21:32 UTC | [Vision Pricing and Skills Limits Update](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260717T213223Z) |
+| `archive-20260720T191708Z` | 2026-07-20 19:17 UTC | [API, Prompting, and SDK Docs Expansion](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260720T191708Z) |
+| `archive-20260717T213223Z` | 2026-07-17 21:33 UTC | [Vision Pricing and Skills Limits Update](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260717T213223Z) |
 | `archive-20260717T093023Z` | 2026-07-17 09:31 UTC | [ZDR guidance and AWS docs refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260717T093023Z) |
 | `archive-20260716T175050Z` | 2026-07-16 17:52 UTC | [Managed Agents Migration and Agent Guide Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260716T175050Z) |
 | `archive-20260715T184455Z` | 2026-07-15 18:46 UTC | [MCP Helper Docs Expanded](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260715T184455Z) |
 | `archive-20260714T233405Z` | 2026-07-14 23:34 UTC | [Bedrock labeling split and Vertex AI doc refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260714T233405Z) |
-| `archive-20260714T165056Z` | 2026-07-14 16:52 UTC | [Claude Enterprise RBAC and User Management Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260714T165056Z) |
