@@ -12,18 +12,18 @@ https://platform.claude.com
 
 The full documentation is available in the following languages on https://platform.claude.com/docs:
 
-- English (en) - 545 pages - /docs - Content included below
-- German (Deutsch) (de) - 194 pages - /docs/de - Visit website for content
-- Spanish (Español) (es) - 194 pages - /docs/es - Visit website for content
-- French (Français) (fr) - 194 pages - /docs/fr - Visit website for content
-- Italian (Italiano) (it) - 194 pages - /docs/it - Visit website for content
-- Japanese (日本語) (ja) - 194 pages - /docs/ja - Visit website for content
-- Korean (한국어) (ko) - 194 pages - /docs/ko - Visit website for content
-- Portuguese (Português) (pt-BR) - 194 pages - /docs/pt-BR - Visit website for content
-- Russian (Русский) (ru) - 194 pages - /docs/ru - Visit website for content
-- Chinese Simplified (简体中文) (zh-CN) - 194 pages - /docs/zh-CN - Visit website for content
-- Chinese Traditional (繁體中文) (zh-TW) - 194 pages - /docs/zh-TW - Visit website for content
-- Indonesian (Bahasa Indonesia) (id) - 194 pages - /docs/id - Visit website for content
+- English (en) - 548 pages - /docs - Content included below
+- German (Deutsch) (de) - 196 pages - /docs/de - Visit website for content
+- Spanish (Español) (es) - 196 pages - /docs/es - Visit website for content
+- French (Français) (fr) - 196 pages - /docs/fr - Visit website for content
+- Italian (Italiano) (it) - 196 pages - /docs/it - Visit website for content
+- Japanese (日本語) (ja) - 196 pages - /docs/ja - Visit website for content
+- Korean (한국어) (ko) - 196 pages - /docs/ko - Visit website for content
+- Portuguese (Português) (pt-BR) - 196 pages - /docs/pt-BR - Visit website for content
+- Russian (Русский) (ru) - 196 pages - /docs/ru - Visit website for content
+- Chinese Simplified (简体中文) (zh-CN) - 196 pages - /docs/zh-CN - Visit website for content
+- Chinese Traditional (繁體中文) (zh-TW) - 196 pages - /docs/zh-TW - Visit website for content
+- Indonesian (Bahasa Indonesia) (id) - 196 pages - /docs/id - Visit website for content
 
 ---
 
@@ -39,7 +39,6 @@ The full documentation is available in the following languages on https://platfo
 - [Overview](https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/overview.md) - MCP tunnels
 - [Quickstart](https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/quickstart.md) - MCP tunnels quickstart
 - [Overview](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview.md) - Tool use with Claude
-- [Adaptive thinking](https://platform.claude.com/docs/en/build-with-claude/adaptive-thinking.md)
 - [Advisor tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/advisor-tool.md)
 - [Architecture and components](https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/concepts.md)
 - [Bash tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/bash-tool.md)
@@ -63,7 +62,7 @@ The full documentation is available in the following languages on https://platfo
 - [Deploy with Helm](https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/deploy-helm.md) - Deploy MCP tunnels with Helm
 - [Effort](https://platform.claude.com/docs/en/build-with-claude/effort.md)
 - [Embeddings](https://platform.claude.com/docs/en/build-with-claude/embeddings.md)
-- [Extended thinking](https://platform.claude.com/docs/en/build-with-claude/extended-thinking.md)
+- [Extended thinking (legacy)](https://platform.claude.com/docs/en/build-with-claude/extended-thinking.md) - Extended thinking
 - [Fallback credit](https://platform.claude.com/docs/en/build-with-claude/fallback-credit.md)
 - [Fast mode (research preview)](https://platform.claude.com/docs/en/build-with-claude/fast-mode.md)
 - [Files API](https://platform.claude.com/docs/en/build-with-claude/files.md)
@@ -90,12 +89,15 @@ The full documentation is available in the following languages on https://platfo
 - [Server tools](https://platform.claude.com/docs/en/agents-and-tools/tool-use/server-tools.md)
 - [Best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices.md) - Skill authoring best practices
 - [Skills for enterprise](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/enterprise.md)
+- [Steering and cost control](https://platform.claude.com/docs/en/build-with-claude/thinking-steering-and-cost.md) - Steering thinking
 - [Stop reasons and fallback](https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons.md)
 - [Streaming Messages](https://platform.claude.com/docs/en/build-with-claude/streaming.md) - Streaming messages
 - [Strict tool use](https://platform.claude.com/docs/en/agents-and-tools/tool-use/strict-tool-use.md)
 - [Structured outputs](https://platform.claude.com/docs/en/build-with-claude/structured-outputs.md)
 - [Task budgets (beta)](https://platform.claude.com/docs/en/build-with-claude/task-budgets.md) - Task budgets
 - [Text editor tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/text-editor-tool.md)
+- [Overview](https://platform.claude.com/docs/en/build-with-claude/thinking.md) - Thinking
+- [Tool and multi-turn workflows](https://platform.claude.com/docs/en/build-with-claude/thinking-tool-workflows.md) - Thinking in tool and multi-turn workflows
 - [Token counting](https://platform.claude.com/docs/en/build-with-claude/token-counting.md)
 - [Tool combinations](https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-combinations.md)
 - [Tool reference](https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-reference.md)
@@ -103,6 +105,7 @@ The full documentation is available in the following languages on https://platfo
 - [Tool search tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-search-tool.md)
 - [Tool use with prompt caching](https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-use-with-prompt-caching.md)
 - [Troubleshooting](https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/troubleshooting.md) - Troubleshoot MCP tunnels
+- [Troubleshooting](https://platform.claude.com/docs/en/build-with-claude/thinking-troubleshooting.md) - Troubleshooting thinking
 - [Troubleshooting](https://platform.claude.com/docs/en/agents-and-tools/tool-use/troubleshooting-tool-use.md) - Troubleshooting tool use
 - [Tutorial: Build a tool-using agent](https://platform.claude.com/docs/en/agents-and-tools/tool-use/build-a-tool-using-agent.md)
 - [Skills in the API](https://platform.claude.com/docs/en/build-with-claude/skills-guide.md) - Using Agent Skills with the API
