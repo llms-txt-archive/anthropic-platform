@@ -22,11 +22,13 @@ The [List organizations](/docs/en/api/compliance/organizations/list) endpoint re
 
 The following call lists every organization under your parent. The response is a `data` array of organization records sorted by `created_at` ascending, plus `has_more` and `next_page` for pagination. When `has_more` is `true`, pass the returned `next_page` token back unchanged as the `page` query parameter on your next request. See [List organizations](/docs/en/api/compliance/organizations/list) in the API reference for the `limit` and `page` parameter defaults and ranges.
 
-```bash cURL
-curl --fail-with-body -sS \
-  "https://api.anthropic.com/v1/compliance/organizations" \
-  -H "x-api-key: $ANTHROPIC_COMPLIANCE_ACCESS_KEY"
-```
+<CodeGroup>
+  ```bash cURL
+  curl --fail-with-body -sS \
+    "https://api.anthropic.com/v1/compliance/organizations" \
+    -H "x-api-key: $ANTHROPIC_COMPLIANCE_ACCESS_KEY"
+  ```
+</CodeGroup>
 
 ```json Response
 {
@@ -71,14 +73,16 @@ See [List organization users](/docs/en/api/compliance/organizations/users/list) 
 
 Results are sorted by organization join date ascending. Unlike the Activity Feed's `before_id`/`after_id` cursors (see [Paginate results](/docs/en/manage-claude/compliance-activity-feed#paginate-results)), the directory endpoints paginate with a `next_page` token: when `has_more` is `true`, pass `next_page` back unchanged as the `page` query parameter on the next request.
 
-```bash cURL
-org_uuid="91012d09-e48b-438e-a489-1bebfd8fa6f9"
+<CodeGroup>
+  ```bash cURL
+  org_uuid="91012d09-e48b-438e-a489-1bebfd8fa6f9"
 
-curl --fail-with-body -sS -G \
-  "https://api.anthropic.com/v1/compliance/organizations/$org_uuid/users" \
-  -H "x-api-key: $ANTHROPIC_COMPLIANCE_ACCESS_KEY" \
-  --data-urlencode "limit=500"
-```
+  curl --fail-with-body -sS -G \
+    "https://api.anthropic.com/v1/compliance/organizations/$org_uuid/users" \
+    -H "x-api-key: $ANTHROPIC_COMPLIANCE_ACCESS_KEY" \
+    --data-urlencode "limit=500"
+  ```
+</CodeGroup>
 
 ```json Response
 {
@@ -106,13 +110,15 @@ The [List Compliance Roles](/docs/en/api/compliance/organizations/roles/list) en
 
 Both role endpoints require `read:compliance_org_data`. The list endpoint accepts the same `limit` and `page` parameters as the [organization users endpoint](#list-organization-users).
 
-```bash cURL
-org_uuid="91012d09-e48b-438e-a489-1bebfd8fa6f9"
+<CodeGroup>
+  ```bash cURL
+  org_uuid="91012d09-e48b-438e-a489-1bebfd8fa6f9"
 
-curl --fail-with-body -sS \
-  "https://api.anthropic.com/v1/compliance/organizations/${org_uuid}/roles" \
-  -H "x-api-key: $ANTHROPIC_COMPLIANCE_ACCESS_KEY"
-```
+  curl --fail-with-body -sS \
+    "https://api.anthropic.com/v1/compliance/organizations/${org_uuid}/roles" \
+    -H "x-api-key: $ANTHROPIC_COMPLIANCE_ACCESS_KEY"
+  ```
+</CodeGroup>
 
 ```json Response
 {
@@ -142,11 +148,13 @@ See the [List Compliance Groups](/docs/en/api/compliance/groups/list) response s
 
 List groups, then for each group list its members:
 
-```bash cURL
-curl --fail-with-body -sS -G \
-  "https://api.anthropic.com/v1/compliance/groups" \
-  -H "x-api-key: $ANTHROPIC_COMPLIANCE_ACCESS_KEY"
-```
+<CodeGroup>
+  ```bash cURL
+  curl --fail-with-body -sS -G \
+    "https://api.anthropic.com/v1/compliance/groups" \
+    -H "x-api-key: $ANTHROPIC_COMPLIANCE_ACCESS_KEY"
+  ```
+</CodeGroup>
 
 ```json Response
 {
@@ -168,13 +176,15 @@ curl --fail-with-body -sS -G \
 
 For each group ID, list its members:
 
-```bash cURL
-group_id="rbac_group_01P9qRsTuVwXyZa2BcDeFgHjK"
+<CodeGroup>
+  ```bash cURL
+  group_id="rbac_group_01P9qRsTuVwXyZa2BcDeFgHjK"
 
-curl --fail-with-body -sS -G \
-  "https://api.anthropic.com/v1/compliance/groups/$group_id/members" \
-  -H "x-api-key: $ANTHROPIC_COMPLIANCE_ACCESS_KEY"
-```
+  curl --fail-with-body -sS -G \
+    "https://api.anthropic.com/v1/compliance/groups/$group_id/members" \
+    -H "x-api-key: $ANTHROPIC_COMPLIANCE_ACCESS_KEY"
+  ```
+</CodeGroup>
 
 ```json Response
 {
