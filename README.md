@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260807T163246Z` | 2026-08-07 16:32 UTC | [Rate limit navigation and inference hook flow updates](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260807T163246Z) |
+| `archive-20260807T173230Z` | 2026-08-07 17:32 UTC | [Managed Agents budgets, advisors, geo pinning, and repository skills](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260807T173230Z) |
+| `archive-20260807T163246Z` | 2026-08-07 16:33 UTC | [Rate limit navigation and inference hook flow updates](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260807T163246Z) |
 | `archive-20260807T003027Z` | 2026-08-07 00:31 UTC | [Advisor Tool and Managed Agents Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260807T003027Z) |
 | `archive-20260806T044837Z` | 2026-08-06 04:49 UTC | [App Attest, Compatibility, and Compliance Docs Update](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260806T044837Z) |
 | `archive-20260805T201352Z` | 2026-08-05 20:15 UTC | [Claude Opus 4.1 Retirement Update](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260805T201352Z) |
 | `archive-20260805T181009Z` | 2026-08-05 18:11 UTC | [Inference Hooks Beta Docs and Admin Guidance Updates](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260805T181009Z) |
-| `archive-20260805T010326Z` | 2026-08-05 01:03 UTC | [Compatibility details moved to the top of key Claude docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260805T010326Z) |
