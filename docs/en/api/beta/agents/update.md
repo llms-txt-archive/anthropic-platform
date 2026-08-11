@@ -16,7 +16,7 @@ Update Agent
 
   - `string`
 
-  - `"message-batches-2024-09-24" or "prompt-caching-2024-07-31" or "computer-use-2024-10-22" or 30 more`
+  - `"message-batches-2024-09-24" or "prompt-caching-2024-07-31" or "computer-use-2024-10-22" or 29 more`
 
     - `"message-batches-2024-09-24"`
 
@@ -81,8 +81,6 @@ Update Agent
     - `"fallback-credit-2026-07-01"`
 
     - `"agent-memory-2026-07-22"`
-
-    - `"mid-conversation-tool-changes-2026-07-01"`
 
 ### Body Parameters
 
@@ -180,7 +178,7 @@ Update Agent
 
     - `string`
 
-  - `BetaManagedAgentsModelConfigParams object { id, effort, inference_geo, speed }`
+  - `BetaManagedAgentsModelConfigParams object { id, effort, speed }`
 
     An object that defines additional configuration control over model use
 
@@ -248,10 +246,6 @@ Update Agent
 
           - `"max"`
 
-    - `inference_geo: optional string`
-
-      Geographic region for model inference. When unset, requests fall through to the workspace's default_inference_geo. On update, `model` is whole-object replacement — omitting inference_geo clears it.
-
     - `speed: optional "standard" or "fast"`
 
       Inference speed mode. `fast` provides significantly faster output token generation at premium pricing. Not all models support `fast`; invalid combinations are rejected at create time.
@@ -293,18 +287,6 @@ Update Agent
       - `type: "self"`
 
         - `"self"`
-
-    - `BetaManagedAgentsAdvisorParams object { model, type }`
-
-      Platform advisor roster entry: a model the session's primary thread may consult mid-turn. At most one per roster; the entry occupies the roster name `anthropic.advisor`.
-
-      - `model: string`
-
-        A Claude model id. The model must be permitted as an advisor for this agent's model — see the sessions/threads/advisor spec.
-
-      - `type: "advisor"`
-
-        - `"advisor"`
 
   - `type: "coordinator"`
 
@@ -496,7 +478,7 @@ Update Agent
 
     - `description: string`
 
-      Description of what the tool does, shown to the agent to help it decide when to use the tool.
+      Description of what the tool does, shown to the agent to help it decide when to use the tool. 1-4096 characters.
 
     - `input_schema: BetaManagedAgentsCustomToolInputSchema`
 
@@ -666,10 +648,6 @@ Update Agent
 
           - `"max"`
 
-    - `inference_geo: optional string`
-
-      Geographic region for model inference. When unset, requests fall through to the workspace's default_inference_geo.
-
     - `speed: optional "standard" or "fast"`
 
       Inference speed mode. `fast` provides significantly faster output token generation at premium pricing. Not all models support `fast`; invalid combinations are rejected at create time.
@@ -682,33 +660,17 @@ Update Agent
 
     Resolved coordinator topology with a concrete agent roster.
 
-    - `agents: array of BetaManagedAgentsAgentReference or BetaManagedAgentsAdvisor`
+    - `agents: array of BetaManagedAgentsAgentReference`
 
       Agents the coordinator may spawn as session threads, each resolved to a specific version.
 
-      - `BetaManagedAgentsAgentReference object { id, type, version }`
+      - `id: string`
 
-        A resolved agent reference with a concrete version.
+      - `type: "agent"`
 
-        - `id: string`
+        - `"agent"`
 
-        - `type: "agent"`
-
-          - `"agent"`
-
-        - `version: number`
-
-      - `BetaManagedAgentsAdvisor object { model, type }`
-
-        Platform advisor roster entry: a model the session's primary thread may consult mid-turn.
-
-        - `model: string`
-
-          The advisor model id.
-
-        - `type: "advisor"`
-
-          - `"advisor"`
+      - `version: number`
 
     - `type: "coordinator"`
 
@@ -932,7 +894,6 @@ curl https://api.anthropic.com/v1/agents/$AGENT_ID \
     "effort": {
       "type": "low"
     },
-    "inference_geo": "inference_geo",
     "speed": "standard"
   },
   "multiagent": {

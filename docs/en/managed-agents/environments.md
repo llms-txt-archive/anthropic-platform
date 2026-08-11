@@ -15,7 +15,7 @@ This page covers `type: cloud` environments. To run sandboxes on your own infras
 ## Create an environment
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash cURL
+  ```bash curl
   environment=$(curl -fsS https://api.anthropic.com/v1/environments \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -135,7 +135,7 @@ Use a unique, descriptive `name` so you can tell environments apart.
 Pass the environment ID as a string when [creating a session](/docs/en/managed-agents/sessions).
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash cURL
+  ```bash curl
   session=$(curl -fsS https://api.anthropic.com/v1/sessions \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -219,7 +219,7 @@ Pass the environment ID as a string when [creating a session](/docs/en/managed-a
 The `packages` field pre-installs packages into the sandbox before the agent starts. Packages are installed by their respective package managers and cached across sessions that share the same environment. When multiple package managers are specified, they run in alphabetical order (apt, cargo, gem, go, npm, pip). You can optionally pin specific versions. Unpinned packages install the latest version.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash cURL
+  ```bash curl
   environment=$(curl -fsS https://api.anthropic.com/v1/environments \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -393,7 +393,7 @@ The `networking` field controls the sandbox's outbound network access. It does n
 The following example creates an environment with `limited` networking:
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash cURL
+  ```bash curl
   curl -fsS https://api.anthropic.com/v1/environments \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -562,7 +562,7 @@ When using `limited` networking:
 ## Manage environments
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash cURL
+  ```bash curl
   # List environments
   environments=$(curl -fsS https://api.anthropic.com/v1/environments \
     -H "x-api-key: $ANTHROPIC_API_KEY" \

@@ -21,7 +21,7 @@ When creating a deployment, you pass the [session configurations](/docs/en/manag
 * In the `schedule`, you define a cron `expression` and a `timezone`. Maximum granularity supported is at the minute level.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash cURL
+  ```bash curl
   DEPLOYMENT_ID=$(
     curl --fail-with-body -sS "https://api.anthropic.com/v1/deployments?beta=true" \
       -H "x-api-key: $ANTHROPIC_API_KEY" \
@@ -291,7 +291,7 @@ Successful deployments generate active sessions, and a successful deployment run
 List all deployment runs for a deployment as follows:
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash cURL
+  ```bash curl
   curl --fail-with-body -sS "https://api.anthropic.com/v1/deployment_runs?beta=true&deployment_id=$DEPLOYMENT_ID" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -380,7 +380,7 @@ List all deployment runs for a deployment as follows:
 You can additionally filter on deployment runs with errors:
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash cURL
+  ```bash curl
   curl --fail-with-body -sS "https://api.anthropic.com/v1/deployment_runs?beta=true&deployment_id=$DEPLOYMENT_ID&has_error=true" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -490,7 +490,7 @@ Each lifecycle change emits a [webhook event](/docs/en/managed-agents/webhooks#s
 **Pause** suppresses scheduled triggers on a go-forward basis; running sessions from a prior deployment run continue to execute. Manual runs through the `run` endpoint are still allowed while paused. Pausing sets `paused_reason` to `{"type": "manual"}`; unpausing clears it.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash cURL
+  ```bash curl
   curl --fail-with-body -sS -X POST "https://api.anthropic.com/v1/deployments/$DEPLOYMENT_ID/pause?beta=true" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -535,7 +535,7 @@ Each lifecycle change emits a [webhook event](/docs/en/managed-agents/webhooks#s
 **Unpause** resumes the schedule from the next scheduled occurrence. Missed triggers are not backfilled.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash cURL
+  ```bash curl
   curl --fail-with-body -sS -X POST "https://api.anthropic.com/v1/deployments/$DEPLOYMENT_ID/unpause?beta=true" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -580,7 +580,7 @@ Each lifecycle change emits a [webhook event](/docs/en/managed-agents/webhooks#s
 **Archive**, unlike **pause**, is terminal: the schedule terminates and the deployment cannot be modified.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash cURL
+  ```bash curl
   curl --fail-with-body -sS -X POST "https://api.anthropic.com/v1/deployments/$DEPLOYMENT_ID/archive?beta=true" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -633,7 +633,7 @@ If a deployment's agent has been archived, the deployment is automatically archi
 To run a deployment outside its schedule, call the [`run` endpoint](/docs/en/api/beta/deployments/run). This creates a session immediately and writes a deployment run with `trigger_context.type: "manual"`. This allows you to test a deployment before committing to the schedule.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash cURL
+  ```bash curl
   curl --fail-with-body -sS -X POST "https://api.anthropic.com/v1/deployments/$DEPLOYMENT_ID/run?beta=true" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \

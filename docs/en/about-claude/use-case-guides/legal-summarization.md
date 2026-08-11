@@ -235,7 +235,7 @@ Because the code outputs each section of the summary within tags, each section c
 
 ### Evaluate your prompt
 
-Prompting often requires testing and optimization for it to be production ready. To determine the readiness of your solution, evaluate the quality of your summaries using a systematic process combining quantitative and qualitative methods. Creating a [strong empirical evaluation](/docs/en/test-and-evaluate/develop-tests#build-evaluations) based on your defined success criteria allows you to optimize your prompts. Here are some metrics you may want to include within your empirical evaluation:
+Prompting often requires testing and optimization for it to be production ready. To determine the readiness of your solution, evaluate the quality of your summaries using a systematic process combining quantitative and qualitative methods. Creating a [strong empirical evaluation](/docs/en/test-and-evaluate/develop-tests#building-evals-and-test-cases) based on your defined success criteria allows you to optimize your prompts. Here are some metrics you may want to include within your empirical evaluation:
 
 <AccordionGroup>
   <Accordion title="ROUGE scores">

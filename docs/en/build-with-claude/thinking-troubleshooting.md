@@ -38,7 +38,7 @@ The table lists what each model supports, what it defaults to, and which `thinki
 
 Models marked `Always on` cannot turn thinking off. Models marked `On` default to thinking but accept `thinking: {type: "disabled"}`.
 
-Earlier Claude 4 models (Claude Opus 4.1, Claude Sonnet 4, and Claude Opus 4) support extended thinking only; see [Model deprecations](/docs/en/about-claude/model-deprecations) for their availability. Claude Fable 5 and Claude Mythos 5 are not available under [zero data retention](/docs/en/manage-claude/api-and-data-retention#model-specific-data-retention-requirements).
+Earlier Claude 4 models (Claude Opus 4.1, Claude Sonnet 4, and Claude Opus 4) support extended thinking only; see [model deprecations](/docs/en/about-claude/model-deprecations) for their availability. Claude Fable 5 and Claude Mythos 5 are not available under [zero data retention](/docs/en/manage-claude/api-and-data-retention#model-specific-data-retention-requirements).
 
 ## A 400 error says `"thinking.type.enabled"` is not supported
 

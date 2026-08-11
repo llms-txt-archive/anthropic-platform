@@ -14,7 +14,7 @@ Choose between polling and cursor-driven Activity Feed consumption, correlate Co
 
 A production Compliance API integration makes three design choices: how it consumes the Activity Feed, how its output correlates with your security information and event management (SIEM) system, and where long-term copies of activity and content live. These choices are independent of the endpoints themselves; this page helps you evaluate the tradeoffs.
 
-This page assumes you have read [Query the Activity Feed](/docs/en/manage-claude/compliance-activity-feed), which defines the parameters and pagination contract referenced throughout, and [Retrieve and delete chats, files, projects, and sessions](/docs/en/manage-claude/compliance-content-data), which defines the content endpoints and `deleted_at` semantics referenced in [Plan content retention](#plan-content-retention).
+This page assumes you have read [Query the Activity Feed](/docs/en/manage-claude/compliance-activity-feed), which defines the parameters and pagination contract referenced throughout, and [Retrieve and delete chats, files, and projects](/docs/en/manage-claude/compliance-content-data), which defines the content endpoints and `deleted_at` semantics referenced in [Plan content retention](#plan-content-retention).
 
 ## Choose a feed-consumption pattern
 
@@ -157,7 +157,7 @@ For chain of custody, store the exported records with provenance metadata: sourc
     Filter parameters, pagination, and the `Activity` object schema.
   </Card>
 
-  <Card title="Retrieve and delete chats, files, projects, and sessions" href="/docs/en/manage-claude/compliance-content-data">
+  <Card title="Retrieve and delete chats, files, and projects" href="/docs/en/manage-claude/compliance-content-data">
     The content and hard-delete endpoints.
   </Card>
 </CardGroup>

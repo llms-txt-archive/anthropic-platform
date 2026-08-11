@@ -17,7 +17,7 @@ GitHub repositories are cached, so future sessions that use the same repository 
 First, create an agent that declares the GitHub MCP server. The agent definition holds the server URL but no authentication token:
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash cURL
+  ```bash curl
   agent_id=$(curl -fsS https://api.anthropic.com/v1/agents \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -228,7 +228,7 @@ First, create an agent that declares the GitHub MCP server. The agent definition
 Then create a session that mounts the GitHub repository:
 
 <CodeGroup>
-  ```bash cURL
+  ```bash curl
   session_id=$(curl -fsS https://api.anthropic.com/v1/sessions \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -401,7 +401,7 @@ When providing a GitHub token, use the minimum required permissions:
 Mount multiple repositories by adding entries to the `resources` array:
 
 <CodeGroup>
-  ```bash cURL
+  ```bash curl
   resources='[
     {
       "type": "github_repository",
@@ -564,7 +564,7 @@ Mount multiple repositories by adding entries to the `resources` array:
 After a session is created, you can list its repository resources and rotate their authorization tokens. Each resource has an `id` returned at session creation time (or through `resources.list`) that you use for updates. Repositories are attached for the lifetime of the session; to change which repositories are mounted, create a new session.
 
 <CodeGroup>
-  ```bash cURL
+  ```bash curl
   # List resources on the session
   repo_resource_id=$(curl -fsS "https://api.anthropic.com/v1/sessions/$session_id/resources" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
@@ -708,7 +708,7 @@ After a session is created, you can list its repository resources and rotate the
 With the GitHub MCP server, the agent can create branches, commit changes, and push them:
 
 <CodeGroup>
-  ```bash cURL
+  ```bash curl
   curl -fsS "https://api.anthropic.com/v1/sessions/$session_id/events" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
