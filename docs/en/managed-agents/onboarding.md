@@ -33,7 +33,7 @@ Once your agent works as expected:
 2. Reference them in your code when [creating sessions](/docs/en/managed-agents/sessions):
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   session=$(curl -fsSL https://api.anthropic.com/v1/sessions \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \

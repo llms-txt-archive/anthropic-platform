@@ -35,7 +35,7 @@ Patterns that work well:
 When [defining your agent](/docs/en/managed-agents/agent-setup), set `multiagent` to declare the roster of agents the coordinator can delegate to:
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   coordinator=$(curl -fsS https://api.anthropic.com/v1/agents \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -297,7 +297,7 @@ To remove the advisor, [update the agent](/docs/en/managed-agents/agent-setup#up
 Create a session referencing the coordinator. The coordinator delegates to the agents in its roster as needed.
 
 <CodeGroup>
-  ```bash curl
+  ```bash cURL
   session=$(curl -fsSL https://api.anthropic.com/v1/sessions \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -385,7 +385,7 @@ MCP servers are agent-scoped (each agent definition declares its own servers and
 [Agent configuration overrides](/docs/en/managed-agents/sessions#override-agent-configuration-for-a-session) at session creation can replace the coordinator's MCP servers and those of its `self` copies.
 
 <CodeGroup>
-  ```bash curl
+  ```bash cURL
   research_agent_id=$(curl --fail-with-body -sS "$BASE/v1/agents" "${H[@]}" --data @- <<'EOF' | jq -er '.id'
   {
     "name": "researcher",
@@ -760,7 +760,7 @@ A [session budget](/docs/en/managed-agents/budgets) is a single shared cap acros
     List all threads associated with a session as follows:
 
     <CodeGroup>
-      ```bash curl
+      ```bash cURL
       curl -fsS "https://api.anthropic.com/v1/sessions/$SESSION_ID/threads" \
         -H "x-api-key: $ANTHROPIC_API_KEY" \
         -H "anthropic-version: 2023-06-01" \
@@ -803,7 +803,8 @@ A [session budget](/docs/en/managed-agents/budgets) is a single shared cap acros
 
       ```java Java
       for (var thread : client.beta().sessions().threads().list(session.id()).autoPager()) {
-          IO.println("[" + thread.agent().name() + "] " + thread.status());
+          var name = thread.agent().isAgent() ? thread.agent().asAgent().name() : "advisor";
+          IO.println("[" + name + "] " + thread.status());
       }
       ```
 
@@ -827,7 +828,7 @@ A [session budget](/docs/en/managed-agents/budgets) is a single shared cap acros
     Send `user.interrupt` with `session_thread_id` to stop a specific thread. Omitting `session_thread_id` interrupts every non-archived thread in the session, including the primary.
 
     <CodeGroup>
-      ```bash curl
+      ```bash cURL
       curl -fsS "https://api.anthropic.com/v1/sessions/$SESSION_ID/events?beta=true" \
         -H "x-api-key: $ANTHROPIC_API_KEY" \
         -H "anthropic-version: 2023-06-01" \
@@ -917,7 +918,7 @@ A [session budget](/docs/en/managed-agents/budgets) is a single shared cap acros
     Optionally archive a session thread when it has completed its work. This frees up a thread against the 25-thread limit.
 
     <CodeGroup>
-      ```bash curl
+      ```bash cURL
       curl -fsS -X POST "https://api.anthropic.com/v1/sessions/$SESSION_ID/threads/$THREAD_ID/archive" \
         -H "x-api-key: $ANTHROPIC_API_KEY" \
         -H "anthropic-version: 2023-06-01" \
@@ -963,7 +964,7 @@ A [session budget](/docs/en/managed-agents/budgets) is a single shared cap acros
           ThreadArchiveParams.builder()
               .sessionId(session.id())
               .build());
-      IO.println(archived.status() + " " + archived.archivedAt());
+      IO.println(archived.status() + " " + archived.archivedAt().orElseThrow());
       ```
 
       ```php PHP
@@ -980,7 +981,7 @@ A [session budget](/docs/en/managed-agents/budgets) is a single shared cap acros
     Archive only succeeds if the thread is `idle`. A thread parked on `requires_action` counts as idle and can be archived directly; only a running thread must be interrupted first:
 
     <CodeGroup>
-      ```bash curl
+      ```bash cURL
       # Interrupt the thread, then archive it
       curl -fsS "https://api.anthropic.com/v1/sessions/$SESSION_ID/events?beta=true" \
         -H "x-api-key: $ANTHROPIC_API_KEY" \
@@ -1076,7 +1077,7 @@ A [session budget](/docs/en/managed-agents/budgets) is a single shared cap acros
           ThreadArchiveParams.builder()
               .sessionId(session.id())
               .build());
-      IO.println(archived.status() + " " + archived.archivedAt());
+      IO.println(archived.status() + " " + archived.archivedAt().orElseThrow());
       ```
 
       ```php PHP
@@ -1124,7 +1125,7 @@ Each session thread has its own event stream at `/v1/sessions/{session_id}/threa
 <Tabs>
   <Tab title="Stream session thread events">
     <CodeGroup>
-      ```bash curl
+      ```bash cURL
       curl -fsSN "https://api.anthropic.com/v1/sessions/$SESSION_ID/threads/$THREAD_ID/stream?beta=true" \
         -H "x-api-key: $ANTHROPIC_API_KEY" \
         -H "anthropic-version: 2023-06-01" \
@@ -1235,7 +1236,7 @@ Each session thread has its own event stream at `/v1/sessions/{session_id}/threa
           for (var event : (Iterable<BetaManagedAgentsStreamSessionThreadEvents>) streamResponse.stream()::iterator) {
               if (event.isAgentMessage()) {
                   for (var block : event.asAgentMessage().content()) {
-                      IO.print(block.text());
+                      block.text().ifPresent(textBlock -> IO.print(textBlock.text()));
                   }
               } else if (event.isSessionThreadStatusIdle()) {
                   break;
@@ -1282,7 +1283,7 @@ Each session thread has its own event stream at `/v1/sessions/{session_id}/threa
     List all past session thread events to pull a complete history.
 
     <CodeGroup>
-      ```bash curl
+      ```bash cURL
       curl -fsS "https://api.anthropic.com/v1/sessions/$SESSION_ID/threads/$THREAD_ID/events" \
         -H "x-api-key: $ANTHROPIC_API_KEY" \
         -H "anthropic-version: 2023-06-01" \
@@ -1338,11 +1339,10 @@ Each session thread has its own event stream at `/v1/sessions/{session_id}/threa
               thread.id(),
               EventListParams.builder().sessionId(session.id()).build()
           ).autoPager()) {
-          var json = event._json().orElseThrow().asObject().orElseThrow();
-          var type = json.get("type").asStringOrThrow();
-          var processedAt = json.containsKey("processed_at")
-              ? json.get("processed_at").asStringOrThrow()
-              : "pending";
+          var type = event._json().orElseThrow() instanceof JsonObject json
+              ? json.values().get("type").asStringOrThrow()
+              : "unknown";
+          var processedAt = event.processedAt().map(OffsetDateTime::toString).orElse("pending");
           IO.println("[" + type + "] " + processedAt);
       }
       ```
@@ -1392,7 +1392,7 @@ Post `user.tool_confirmation` (with `tool_use_id`) or `user.custom_tool_result` 
 The following example extends the [tool confirmation handler](/docs/en/managed-agents/events-and-streaming#tool-confirmation) to route replies. The same pattern applies to `user.custom_tool_result`.
 
 <CodeGroup>
-  ```bash curl
+  ```bash cURL
   while IFS= read -r event_id; do
     jq -n --arg id "$event_id" \
       '{events: [{type: "user.tool_confirmation", tool_use_id: $id, result: "allow"}]}' |

@@ -403,27 +403,157 @@ A `.claude/skills` directory elsewhere in the repository, such as inside a packa
 
 Repository skills use the same `SKILL.md` format as the custom skills you upload. For the format and authoring guidance, see [Agent Skills](/docs/en/agents-and-tools/agent-skills/overview) and [Skill authoring best practices](/docs/en/agents-and-tools/agent-skills/best-practices).
 
-To load skills from a repository, create a session that mounts it:
+To load skills from a repository, create a session that mounts it. This is the same request shown in [Accessing GitHub](/docs/en/managed-agents/github#token-permissions); `mount_path` is optional and defaults to `/workspace/<repo-name>`:
 
-```bash cURL
-curl -sS https://api.anthropic.com/v1/sessions \
-  -H "x-api-key: $ANTHROPIC_API_KEY" \
-  -H "anthropic-version: 2023-06-01" \
-  -H "anthropic-beta: managed-agents-2026-04-01" \
-  --json @- <<'EOF'
-{
-  "agent": "agent_01J8XkN5uT3vHpLqRfWdY2",
-  "environment_id": "env_01K2mPsT7hNwR4jXuLvCqD8",
-  "resources": [
-    {
-      "type": "github_repository",
-      "url": "https://github.com/org/repo",
-      "authorization_token": "ghp_your_github_token"
-    }
-  ]
-}
-EOF
-```
+<CodeGroup defaultLanguage="CLI">
+  ```bash cURL
+  session_id=$(curl -fsS https://api.anthropic.com/v1/sessions \
+    -H "x-api-key: $ANTHROPIC_API_KEY" \
+    -H "anthropic-version: 2023-06-01" \
+    -H "anthropic-beta: managed-agents-2026-04-01" \
+    -H "content-type: application/json" \
+    --data @- <<JSON | jq -r '.id'
+  {
+    "agent": "$agent_id",
+    "environment_id": "$environment_id",
+    "resources": [
+      {
+        "type": "github_repository",
+        "url": "https://github.com/org/repo",
+        "mount_path": "/workspace/repo",
+        "authorization_token": "ghp_your_github_token"
+      }
+    ]
+  }
+  JSON
+  )
+  ```
+
+  ```bash CLI
+  SESSION_ID=$(ant beta:sessions create \
+    --agent "$AGENT_ID" \
+    --environment-id "$ENVIRONMENT_ID" \
+    --transform id --raw-output <<'EOF'
+  resources:
+    - type: github_repository
+      url: https://github.com/org/repo
+      mount_path: /workspace/repo
+      authorization_token: ghp_your_github_token
+  EOF
+  )
+  ```
+
+  ```python Python
+  session = client.beta.sessions.create(
+      agent=agent.id,
+      environment_id=environment.id,
+      resources=[
+          {
+              "type": "github_repository",
+              "url": "https://github.com/org/repo",
+              "mount_path": "/workspace/repo",
+              "authorization_token": "ghp_your_github_token",
+          },
+      ],
+  )
+  ```
+
+  ```typescript TypeScript
+  const session = await client.beta.sessions.create({
+    agent: agent.id,
+    environment_id: environment.id,
+    resources: [
+      {
+        type: "github_repository",
+        url: "https://github.com/org/repo",
+        mount_path: "/workspace/repo",
+        authorization_token: "ghp_your_github_token",
+      },
+    ],
+  });
+  ```
+
+  ```csharp C#
+  var session = await client.Beta.Sessions.Create(new()
+  {
+      Agent = agent.ID,
+      EnvironmentID = environment.ID,
+      Resources =
+      [
+          new BetaManagedAgentsGitHubRepositoryResourceParams
+          {
+              Type = "github_repository",
+              Url = "https://github.com/org/repo",
+              MountPath = "/workspace/repo",
+              AuthorizationToken = "ghp_your_github_token",
+          },
+      ],
+  });
+  ```
+
+  ```go Go
+  session, err := client.Beta.Sessions.New(ctx, anthropic.BetaSessionNewParams{
+  	Agent:         anthropic.BetaSessionNewParamsAgentUnion{OfString: anthropic.String(agent.ID)},
+  	EnvironmentID: environment.ID,
+  	Resources: []anthropic.BetaSessionNewParamsResourceUnion{
+  		{
+  			OfGitHubRepository: &anthropic.BetaManagedAgentsGitHubRepositoryResourceParams{
+  				Type:               anthropic.BetaManagedAgentsGitHubRepositoryResourceParamsTypeGitHubRepository,
+  				URL:                "https://github.com/org/repo",
+  				MountPath:          anthropic.String("/workspace/repo"),
+  				AuthorizationToken: "ghp_your_github_token",
+  			},
+  		},
+  	},
+  })
+  if err != nil {
+  	panic(err)
+  }
+  ```
+
+  ```java Java
+  var session = client.beta().sessions().create(SessionCreateParams.builder()
+      .agent(agent.id())
+      .environmentId(environment.id())
+      .addResource(BetaManagedAgentsGitHubRepositoryResourceParams.builder()
+          .type(BetaManagedAgentsGitHubRepositoryResourceParams.Type.GITHUB_REPOSITORY)
+          .url("https://github.com/org/repo")
+          .mountPath("/workspace/repo")
+          .authorizationToken("ghp_your_github_token")
+          .build())
+      .build());
+  ```
+
+  ```php PHP
+  $session = $client->beta->sessions->create(
+      agent: $agent->id,
+      environmentID: $environment->id,
+      resources: [
+          [
+              'type' => 'github_repository',
+              'url' => 'https://github.com/org/repo',
+              'mountPath' => '/workspace/repo',
+              'authorizationToken' => 'ghp_your_github_token',
+          ],
+      ],
+  );
+  ```
+
+  ```ruby Ruby
+  session = client.beta.sessions.create(
+    agent: agent.id,
+    environment_id: environment.id,
+    resources: [
+      {
+        type: "github_repository",
+        url: "https://github.com/org/repo",
+        mount_path: "/workspace/repo",
+        authorization_token: "ghp_your_github_token"
+      }
+    ]
+  )
+  ```
+</CodeGroup>
 
 For private repositories, the resource's `authorization_token` must have access to the repository. This is the same personal access token flow used for any repository mount; see [Accessing GitHub](/docs/en/managed-agents/github#token-permissions).
 

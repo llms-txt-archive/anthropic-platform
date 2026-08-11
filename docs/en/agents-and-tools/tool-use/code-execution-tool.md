@@ -38,20 +38,20 @@ The code execution tool is available on the following models:
 
 Each tool version builds on the previous one:
 
-* `code_execution_20250825` supports Bash commands and file operations and is available on every model in the table.
+* `code_execution_20250825` supports Bash commands and file operations.
 * `code_execution_20260120` adds REPL state persistence and [programmatic tool calling](/docs/en/agents-and-tools/tool-use/programmatic-tool-calling) from within the sandbox. Claude Haiku 4.5 accepts the `code_execution_20260120` and `code_execution_20260521` tool types, but programmatic tool calling and the REPL state persistence that depends on it aren't available on it, so the newer versions behave like `code_execution_20250825` there.
 * `code_execution_20260521` is the same runtime as `code_execution_20260120`. The difference is that the tool description tells Claude about the 90-second wall-clock limit on each Python cell in programmatic tool calling, so Claude can budget long-running cells. A cell that exceeds the limit returns a normal code execution result with a non-zero `return_code` and a `detection_timeout` status message in its output. This is separate from the `execution_time_exceeded` [error code](#errors), which the API returns when a whole tool invocation exceeds the maximum execution time.
 
 All three tool versions are generally available and don't require an `anthropic-beta` header. The legacy code execution beta headers remain valid opt-ins.
 
-The examples on this page use `code_execution_20250825` because every model in the table supports it. The current [web search](/docs/en/agents-and-tools/tool-use/web-search-tool) and [web fetch](/docs/en/agents-and-tools/tool-use/web-fetch-tool) tools (`web_search_20260209`, `web_fetch_20260209`, and later) require `code_execution_20260120` or later as their code execution version.
+The examples on this page use `code_execution_20250825`, which covers the Bash and file operations they demonstrate and behaves the same way on every model in the table; use `code_execution_20260120` or later when you need programmatic tool calling or REPL state persistence. The current [web search](/docs/en/agents-and-tools/tool-use/web-search-tool) and [web fetch](/docs/en/agents-and-tools/tool-use/web-fetch-tool) tools (`web_search_20260209`, `web_fetch_20260209`, and later) require `code_execution_20260120` or later as their code execution version.
 
 <Note>
   If you're still using the legacy `code_execution_20250522` (Python only), see [Upgrade to latest tool version](#upgrade-to-latest-tool-version) to migrate from it.
 </Note>
 
 <Warning>
-  Older tool versions are not guaranteed to be backwards-compatible with newer models. Always use the tool version that corresponds to your model version.
+  Older tool versions are not guaranteed to stay compatible with newer models. When you adopt a new model, check the [model compatibility table](#model-compatibility) and prefer the newest tool version your integration supports.
 </Warning>
 
 ## Platform availability

@@ -1,6 +1,6 @@
-# Retrieve and delete chats, files, and projects
+# Retrieve and delete chats, files, projects, and sessions
 
-Access chat content, file attachments, and projects for claude.ai organizations through the Compliance API.
+Access chat content, file attachments, projects, and session transcripts for claude.ai organizations through the Compliance API.
 
 ---
 

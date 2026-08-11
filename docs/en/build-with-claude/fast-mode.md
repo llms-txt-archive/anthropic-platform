@@ -347,7 +347,7 @@ The response `usage` object includes a `speed` field that indicates which speed 
           .build();
 
   BetaMessage response = client.beta().messages().create(params);
-  IO.println(response.usage().speed());  // "fast" or "standard"
+  IO.println(response.usage().speed().orElseThrow());  // "fast" or "standard"
   ```
 
   ```php PHP

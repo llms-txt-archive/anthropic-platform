@@ -22,13 +22,13 @@ Updates to the Claude Platform, including the Claude API, client SDKs, and the C
 
 * You can now set a budget on a Claude Managed Agents session: a hard cap on the session's spend, priced at public list rates. A session that reaches its budget pauses with the `budget_reached` stop reason instead of starting new model requests; changing or removing the budget resumes it. Deployments accept the same budget and apply it to each session they start. See [Session budgets](/docs/en/managed-agents/budgets).
 * You can now give a Claude Managed Agents session an advisor: a model at least as capable as the agent's own that the session's primary thread can consult mid-turn for strategic guidance. Configure it as a `{"type": "advisor"}` entry in the agent's multiagent roster, naming the `model` to consult. See [Give the session an advisor](/docs/en/managed-agents/multiagent-orchestration#give-the-session-an-advisor).
-* You can now control where model inference runs for a Claude Managed Agents agent. Set `inference_geo` inside the `model` object when you [create the agent](/docs/en/managed-agents/agent-setup#create-an-agent), or override it for a single session. See [Data residency](/docs/en/manage-claude/data-residency) for the available geos and pricing.
+* You can now control where model inference runs for a Claude Managed Agents agent. Set `inference_geo` inside the `model` object when you [create the agent](/docs/en/managed-agents/agent-setup#pin-the-inference-geo), or [override it for a single session](/docs/en/managed-agents/sessions#pin-the-inference-geo-for-a-session). See [Data residency](/docs/en/manage-claude/data-residency) for the available geos and pricing.
 * Claude Managed Agents sessions can now [load skills from a GitHub repository](/docs/en/managed-agents/skills#load-skills-from-a-github-repository). When a session [mounts a repository](/docs/en/managed-agents/github), any skills in its root `.claude/skills` directory are discovered automatically at session start and available to the agent for that session.
 
 ### August 5, 2026
 
 * **Inference hooks** are now in beta for Claude Enterprise organizations. Point Claude at your organization's AI security server, and each governed prompt across claude.ai, Cowork, and Claude Code is held for the server's allow or deny verdict before inference proceeds. Requests are signed, failure handling is configurable, and every denial is recorded in the compliance [Activity Feed](/docs/en/manage-claude/compliance-activity-feed). See [Inference hooks](/docs/en/manage-claude/inference-hooks).
-* We've retired the Claude Opus 4.1 model (`claude-opus-4-1-20250805`). All requests to this model will now return an error. We recommend upgrading to [Claude Opus 5](/docs/en/about-claude/models/overview#latest-models-comparison). Researchers can request ongoing access through the [External Researcher Access Program](https://support.claude.com/en/articles/9125743-what-is-the-external-researcher-access-program).
+* We've retired the Claude Opus 4.1 model (`claude-opus-4-1-20250805`). All requests to this model on the Claude API will now return an error. We recommend upgrading to [Claude Opus 5](/docs/en/about-claude/models/overview#latest-models-comparison). Researchers can request ongoing access through the [External Researcher Access Program](https://support.claude.com/en/articles/9125743-what-is-the-external-researcher-access-program).
 
 ### August 3, 2026
 
@@ -117,7 +117,7 @@ Updates to the Claude Platform, including the Claude API, client SDKs, and the C
 
 ### June 15, 2026
 
-* We've retired the Claude Sonnet 4 model (`claude-sonnet-4-20250514`) and the Claude Opus 4 model (`claude-opus-4-20250514`). All requests to these models will now return an error. We recommend upgrading to [Claude Sonnet 4.6](/docs/en/about-claude/models/overview#latest-models-comparison) and [Claude Opus 4.8](/docs/en/about-claude/models/overview#latest-models-comparison) respectively. Researchers can request ongoing access through the [External Researcher Access Program](https://support.claude.com/en/articles/9125743-what-is-the-external-researcher-access-program).
+* We've retired the Claude Sonnet 4 model (`claude-sonnet-4-20250514`) and the Claude Opus 4 model (`claude-opus-4-20250514`). All requests to these models on the Claude API will now return an error. We recommend upgrading to [Claude Sonnet 4.6](/docs/en/about-claude/models/overview#latest-models-comparison) and [Claude Opus 4.8](/docs/en/about-claude/models/overview#latest-models-comparison) respectively. Researchers can request ongoing access through the [External Researcher Access Program](https://support.claude.com/en/articles/9125743-what-is-the-external-researcher-access-program).
 
 ### June 11, 2026
 
@@ -145,7 +145,7 @@ Updates to the Claude Platform, including the Claude API, client SDKs, and the C
 
 ### June 5, 2026
 
-* We announced the deprecation of the Claude Opus 4.1 model (`claude-opus-4-1-20250805`), with retirement on the Claude API scheduled for August 5, 2026. We recommend migrating to [Claude Opus 4.8](/docs/en/about-claude/models/migration-guide). Read more in [model deprecations](/docs/en/about-claude/model-deprecations).
+* We announced the deprecation of the Claude Opus 4.1 model (`claude-opus-4-1-20250805`), with retirement on the Claude API scheduled for August 5, 2026. We recommend migrating to [Claude Opus 4.8](/docs/en/about-claude/models/migration-guide). Read more in [Model deprecations](/docs/en/about-claude/model-deprecations).
 
 ### June 2, 2026
 
@@ -245,7 +245,7 @@ Updates to the Claude Platform, including the Claude API, client SDKs, and the C
 
 ### April 14, 2026
 
-* We announced the deprecation of the Claude Sonnet 4 model (`claude-sonnet-4-20250514`) and the Claude Opus 4 model (`claude-opus-4-20250514`), with retirement on the Claude API scheduled for June 15, 2026. We recommend migrating to [Claude Sonnet 4.6](/docs/en/about-claude/models/overview#latest-models-comparison) and [Claude Opus 4.8](/docs/en/about-claude/models/migration-guide) respectively. Read more in [model deprecations](/docs/en/about-claude/model-deprecations).
+* We announced the deprecation of the Claude Sonnet 4 model (`claude-sonnet-4-20250514`) and the Claude Opus 4 model (`claude-opus-4-20250514`), with retirement on the Claude API scheduled for June 15, 2026. We recommend migrating to [Claude Sonnet 4.6](/docs/en/about-claude/models/overview#latest-models-comparison) and [Claude Opus 4.8](/docs/en/about-claude/models/migration-guide) respectively. Read more in [Model deprecations](/docs/en/about-claude/model-deprecations).
 
 ### April 9, 2026
 
@@ -283,7 +283,7 @@ Updates to the Claude Platform, including the Claude API, client SDKs, and the C
 ### February 19, 2026
 
 * We've launched **automatic caching** for the Messages API. Add a single `cache_control` field to your request body and the system automatically caches the last cacheable block, moving the cache point forward as conversations grow. No manual breakpoint management required. Works alongside existing block-level cache control for fine-grained optimization. Available on the Claude API and Microsoft Foundry (preview). Learn more in [Prompt caching](/docs/en/build-with-claude/prompt-caching#automatic-caching).
-* We've retired the Claude Sonnet 3.7 model (`claude-3-7-sonnet-20250219`) and the Claude Haiku 3.5 model (`claude-3-5-haiku-20241022`). All requests to these models will now return an error. We recommend upgrading to [Claude Sonnet 4.6](/docs/en/about-claude/models/overview#latest-models-comparison) and [Claude Haiku 4.5](/docs/en/about-claude/models/overview#latest-models-comparison) respectively. Researchers can request ongoing access through the [External Researcher Access Program](https://support.claude.com/en/articles/9125743-what-is-the-external-researcher-access-program).
+* We've retired the Claude Sonnet 3.7 model (`claude-3-7-sonnet-20250219`) and the Claude Haiku 3.5 model (`claude-3-5-haiku-20241022`). All requests to Claude Sonnet 3.7 will now return an error. Requests to Claude Haiku 3.5 on the Claude API will now return an error; it remains available on Amazon Bedrock and Google Cloud. We recommend upgrading to [Claude Sonnet 4.6](/docs/en/about-claude/models/overview#latest-models-comparison) and [Claude Haiku 4.5](/docs/en/about-claude/models/overview#latest-models-comparison) respectively. Researchers can request ongoing access through the [External Researcher Access Program](https://support.claude.com/en/articles/9125743-what-is-the-external-researcher-access-program).
 * We announced the deprecation of the Claude Haiku 3 model (`claude-3-haiku-20240307`), with retirement scheduled for April 20, 2026. We recommend migrating to [Claude Haiku 4.5](/docs/en/about-claude/models/overview#latest-models-comparison). Read more in [Model deprecations](/docs/en/about-claude/model-deprecations).
 
 ### February 17, 2026
@@ -573,7 +573,7 @@ Updates to the Claude Platform, including the Claude API, client SDKs, and the C
 
 The following features are now generally available in the Claude API:
 
-* [Models API](/docs/en/api/models/list): Query available models, validate model IDs, and resolve [model aliases](/docs/en/about-claude/models#model-names) to their canonical model IDs.
+* [Models API](/docs/en/api/models/list): Query available models, validate model IDs, and resolve [model aliases](/docs/en/about-claude/models/overview) to their canonical model IDs.
 * [Message Batches API](/docs/en/build-with-claude/batch-processing): Process large batches of messages asynchronously at 50% of the standard API cost.
 * [Token counting API](/docs/en/build-with-claude/token-counting): Calculate token counts for Messages before sending them to Claude.
 * [Prompt Caching](/docs/en/build-with-claude/prompt-caching): Reduce costs by up to 90% and latency by up to 80% by caching and reusing prompt content.

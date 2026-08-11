@@ -29,7 +29,7 @@ Every change to a memory creates an immutable **memory version**, giving you an 
 Give the store a `name` and a `description`. The description is passed to the agent, telling it what the store contains.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   store=$(curl -s https://api.anthropic.com/v1/memory_stores \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -125,7 +125,7 @@ The memory store `id` (`memstore_...`) is what you pass when attaching the store
 Pre-load a store with reference material before any agent runs:
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   curl -s "https://api.anthropic.com/v1/memory_stores/$store_id/memories" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -215,7 +215,7 @@ Optionally include `instructions` to provide session-specific guidance for how t
 You can configure `access` as well. It defaults to `read_write` (shown explicitly in the following example), but `read_only` is also supported.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   curl -s https://api.anthropic.com/v1/sessions \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -395,7 +395,7 @@ List the memories in a store. Results are returned in a stable, server-defined o
 * `depth` controls how deep the listing goes below `path_prefix`: omit it (or pass `0`) to list the whole subtree, or pass `1` to list only the immediate children. Other values return a `400` error.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   curl -s "https://api.anthropic.com/v1/memory_stores/$store_id/memories?path_prefix=/" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -491,7 +491,7 @@ See the [List memories reference](/docs/en/api/beta/memory_stores/memories/list)
 Fetching an individual memory returns the full content.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   curl -s "https://api.anthropic.com/v1/memory_stores/$store_id/memories/$mem_id" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -542,7 +542,7 @@ Fetching an individual memory returns the full content.
       mem.id(),
       MemoryRetrieveParams.builder().memoryStoreId(store.id()).build()
   );
-  IO.println(retrieved.content());
+  IO.println(retrieved.content().orElseThrow());
   ```
 
   ```php PHP
@@ -566,7 +566,7 @@ See the [Retrieve a memory reference](/docs/en/api/beta/memory_stores/memories/r
 `memories.create` creates a memory at a given `path`. Create does not overwrite; to change an existing memory, use [`memories.update`](#update-a-memory).
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   mem=$(curl -s "https://api.anthropic.com/v1/memory_stores/$store_id/memories" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -654,7 +654,7 @@ See the [Create a memory reference](/docs/en/api/beta/memory_stores/memories/cre
 `memories.update` modifies an existing memory by ID. You can change `content`, `path` (a rename), or both. The example renames a memory to an archive path:
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   curl -s -X POST "https://api.anthropic.com/v1/memory_stores/$store_id/memories/$mem_id" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -738,7 +738,7 @@ See the [Update a memory reference](/docs/en/api/beta/memory_stores/memories/upd
 To avoid clobbering a concurrent write, pass a `content_sha256` precondition. The update only applies if the stored content hash still matches the one you read; on mismatch, re-read the memory and retry against the fresh state.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   curl -s -X POST "https://api.anthropic.com/v1/memory_stores/$store_id/memories/$mem_id" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -843,7 +843,7 @@ To avoid clobbering a concurrent write, pass a `content_sha256` precondition. Th
 ### Delete a memory
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   curl -s -X DELETE "https://api.anthropic.com/v1/memory_stores/$store_id/memories/$mem_id" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -922,7 +922,7 @@ Past memory versions might be deleted after 30 days. To preserve memory history 
 List version history for a store, newest first. The example filters to a single memory's history:
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   versions=$(curl -s "https://api.anthropic.com/v1/memory_stores/$store_id/memory_versions?memory_id=$mem_id" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -1043,7 +1043,7 @@ See the [List memory versions reference](/docs/en/api/beta/memory_stores/memory_
 Fetching an individual version returns the same fields as the list response plus the full `content` body.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   curl -s "https://api.anthropic.com/v1/memory_stores/$store_id/memory_versions/$version_id" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -1094,7 +1094,7 @@ Fetching an individual version returns the same fields as the list response plus
       versionId,
       MemoryVersionRetrieveParams.builder().memoryStoreId(store.id()).build()
   );
-  IO.println(version.content());
+  IO.println(version.content().orElseThrow());
   ```
 
   ```php PHP
@@ -1123,7 +1123,7 @@ Redact scrubs content out of a historical version while preserving the audit tra
 A version that is the current head of a live memory cannot be redacted. Write a new version first (or delete the memory), then redact the old one.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   curl -s -X POST "https://api.anthropic.com/v1/memory_stores/$store_id/memory_versions/$version_id/redact" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -1200,7 +1200,7 @@ In addition to [`create`](/docs/en/api/beta/memory_stores/create), memory stores
 List stores in the workspace. Archived stores are excluded by default; pass `include_archived: true` to include them.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   curl -s "https://api.anthropic.com/v1/memory_stores?include_archived=true" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -1273,7 +1273,7 @@ See the [List memory stores reference](/docs/en/api/beta/memory_stores/list) for
 Archiving makes a store read-only and prevents it from being attached to new sessions. Archiving is one-way; there is no unarchive.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   curl -s -X POST "https://api.anthropic.com/v1/memory_stores/$store_id/archive" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \

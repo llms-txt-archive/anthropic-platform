@@ -598,7 +598,7 @@ On the Claude API, [Claude Platform on AWS](/docs/en/build-with-claude/claude-pl
 * 4,096 tokens for Claude Opus 4.6 and Claude Opus 4.5
 * 1,024 tokens for Claude Opus 4.8, Claude Sonnet 5, Claude Sonnet 4.6, Claude Sonnet 4.5, Claude Opus 4.1 ([retired, except on Bedrock and Google Cloud](/docs/en/about-claude/model-deprecations)), Claude Opus 4 ([retired, except on Google Cloud](/docs/en/about-claude/model-deprecations)), and Claude Sonnet 4 ([retired, except on Bedrock and Google Cloud](/docs/en/about-claude/model-deprecations))
 * 4,096 tokens for Claude Haiku 4.5
-* 2,048 tokens for Claude Haiku 3.5 ([retired, except on Google Cloud](/docs/en/about-claude/model-deprecations))
+* 2,048 tokens for Claude Haiku 3.5 ([retired, except on Bedrock and Google Cloud](/docs/en/about-claude/model-deprecations))
 
 These minimums apply on every platform where each model is available.
 

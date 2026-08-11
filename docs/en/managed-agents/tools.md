@@ -34,7 +34,7 @@ When a tool output exceeds 100,000 characters (about 25,000 tokens), it is autom
 Enable the full toolset with `agent_toolset_20260401` when creating an agent. Use the `configs` array to disable specific tools or override their settings. Each config entry can also set a `permission_policy` that controls whether the tool's calls are auto-approved or require confirmation. See [Permission policies](/docs/en/managed-agents/permission-policies) for the available policy types.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   agent=$(curl -fsSL https://api.anthropic.com/v1/agents \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -229,7 +229,7 @@ Each custom tool defines a contract: you specify what operations are available a
 If your sessions run in a self-hosted sandbox, the environment worker can [serve custom tools from your sandbox](/docs/en/managed-agents/self-hosted-sandboxes#serve-custom-tools-from-your-sandbox), including tools that wrap an MCP server inside your network.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   agent=$(curl -fsSL https://api.anthropic.com/v1/agents \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \

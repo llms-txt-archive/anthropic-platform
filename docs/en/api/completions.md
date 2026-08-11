@@ -18,7 +18,7 @@ Future models and features will not be compatible with Text Completions. See our
 
   - `string`
 
-  - `"message-batches-2024-09-24" or "prompt-caching-2024-07-31" or "computer-use-2024-10-22" or 29 more`
+  - `"message-batches-2024-09-24" or "prompt-caching-2024-07-31" or "computer-use-2024-10-22" or 30 more`
 
     - `"message-batches-2024-09-24"`
 
@@ -84,6 +84,8 @@ Future models and features will not be compatible with Text Completions. See our
 
     - `"agent-memory-2026-07-22"`
 
+    - `"mid-conversation-tool-changes-2026-07-01"`
+
 ### Body Parameters
 
 - `max_tokens_to_sample: number`
@@ -98,7 +100,7 @@ Future models and features will not be compatible with Text Completions. See our
 
   See [models](https://docs.anthropic.com/en/docs/models-overview) for additional details and options.
 
-  - `"claude-sonnet-5" or "claude-fable-5" or "claude-mythos-5" or 14 more`
+  - `"claude-sonnet-5" or "claude-fable-5" or "claude-mythos-5" or 12 more`
 
     The model that will complete your prompt.
 
@@ -163,14 +165,6 @@ Future models and features will not be compatible with Text Completions. See our
     - `"claude-sonnet-4-5-20250929"`
 
       High-performance model for agents and coding
-
-    - `"claude-opus-4-1"`
-
-      Powerful intelligence for long-running agents and coding
-
-    - `"claude-opus-4-1-20250805"`
-
-      Powerful intelligence for long-running agents and coding
 
   - `string`
 
@@ -262,7 +256,7 @@ Future models and features will not be compatible with Text Completions. See our
 
     See [models](https://docs.anthropic.com/en/docs/models-overview) for additional details and options.
 
-    - `"claude-sonnet-5" or "claude-fable-5" or "claude-mythos-5" or 14 more`
+    - `"claude-sonnet-5" or "claude-fable-5" or "claude-mythos-5" or 12 more`
 
       The model that will complete your prompt.
 
@@ -327,14 +321,6 @@ Future models and features will not be compatible with Text Completions. See our
       - `"claude-sonnet-4-5-20250929"`
 
         High-performance model for agents and coding
-
-      - `"claude-opus-4-1"`
-
-        Powerful intelligence for long-running agents and coding
-
-      - `"claude-opus-4-1-20250805"`
-
-        Powerful intelligence for long-running agents and coding
 
     - `string`
 
@@ -407,7 +393,7 @@ curl https://api.anthropic.com/v1/complete \
 
     See [models](https://docs.anthropic.com/en/docs/models-overview) for additional details and options.
 
-    - `"claude-sonnet-5" or "claude-fable-5" or "claude-mythos-5" or 14 more`
+    - `"claude-sonnet-5" or "claude-fable-5" or "claude-mythos-5" or 12 more`
 
       The model that will complete your prompt.
 
@@ -472,14 +458,6 @@ curl https://api.anthropic.com/v1/complete \
       - `"claude-sonnet-4-5-20250929"`
 
         High-performance model for agents and coding
-
-      - `"claude-opus-4-1"`
-
-        Powerful intelligence for long-running agents and coding
-
-      - `"claude-opus-4-1-20250805"`
-
-        Powerful intelligence for long-running agents and coding
 
     - `string`
 

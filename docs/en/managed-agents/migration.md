@@ -1115,7 +1115,7 @@ If you built with the [Claude Agent SDK](https://code.claude.com/docs/en/agent-s
       for (var event : (Iterable<BetaManagedAgentsStreamSessionEvents>) stream.stream()::iterator) {
           if (event.isAgentMessage()) {
               for (var block : event.asAgentMessage().content()) {
-                  IO.println(block.text());
+                  block.text().ifPresent(textBlock -> IO.println(textBlock.text()));
               }
           } else if (event.isAgentCustomToolUse()) {
               var toolUse = event.asAgentCustomToolUse();

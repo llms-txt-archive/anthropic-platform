@@ -59,7 +59,7 @@ Pass the rubric as inline text on `user.define_outcome` (see [Create a session w
 </Note>
 
 <CodeGroup>
-  ```bash curl
+  ```bash cURL
   rubric=$(curl -fsSL https://api.anthropic.com/v1/files \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -293,7 +293,7 @@ Pass the rubric as inline text on `user.define_outcome` (see [Create a session w
 The following examples create a [session](/docs/en/managed-agents/sessions) for an existing [agent](/docs/en/managed-agents/agent-setup) and [environment](/docs/en/managed-agents/environments) (both created separately), then send a `user.define_outcome` event. The agent begins work immediately. No additional user message event is required.
 
 <CodeGroup>
-  ```bash curl
+  ```bash cURL
   # Create a session
   session=$(curl -fsSL https://api.anthropic.com/v1/sessions \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
@@ -631,7 +631,7 @@ Emitted when an outcome evaluation cycle ends: after the grader finishes evaluat
 You can either listen on the [event stream](/docs/en/managed-agents/events-and-streaming) for `span.outcome_evaluation_end`, or poll `GET /v1/sessions/{session_id}` and read `outcome_evaluations[].result`. Until an evaluation completes, `result` reports `pending`, `running`, or `evaluating`:
 
 <CodeGroup>
-  ```bash curl
+  ```bash cURL
   session=$(curl -fsSL "https://api.anthropic.com/v1/sessions/$session_id" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -722,7 +722,7 @@ The agent writes output files to `/mnt/session/outputs/` inside the sandbox. Onc
 </Note>
 
 <CodeGroup>
-  ```bash curl
+  ```bash cURL
   # List files produced by this session
   # scope_id filtering requires the managed-agents beta
   files=$(curl -fsSL "https://api.anthropic.com/v1/files?scope_id=$session_id" \

@@ -984,14 +984,14 @@ Plain text documents are automatically chunked into sentences. You can provide t
 </Tabs>
 
 <Accordion title="Example plain text citation">
-  ```python
+  ```json
   {
-      "type": "char_location",
-      "cited_text": "The exact text being cited",  # not counted toward output tokens
-      "document_index": 0,
-      "document_title": "Document Title",
-      "start_char_index": 0,  # 0-indexed
-      "end_char_index": 50,  # exclusive
+    "type": "char_location",
+    "cited_text": "The exact text being cited", // not counted toward output tokens
+    "document_index": 0,
+    "document_title": "Document Title",
+    "start_char_index": 0, // 0-indexed
+    "end_char_index": 50 // exclusive
   }
   ```
 </Accordion>
@@ -1815,14 +1815,14 @@ PDF documents can be provided as base64-encoded data, a URL, or by `file_id`. PD
 </Tabs>
 
 <Accordion title="Example PDF citation">
-  ```python
+  ```json
   {
-      "type": "page_location",
-      "cited_text": "The exact text being cited",  # not counted toward output tokens
-      "document_index": 0,
-      "document_title": "Document Title",
-      "start_page_number": 1,  # 1-indexed
-      "end_page_number": 2,  # exclusive
+    "type": "page_location",
+    "cited_text": "The exact text being cited", // not counted toward output tokens
+    "document_index": 0,
+    "document_title": "Document Title",
+    "start_page_number": 1, // 1-indexed
+    "end_page_number": 2 // exclusive
   }
   ```
 </Accordion>
@@ -2135,14 +2135,14 @@ Custom content documents give you control over citation granularity. No addition
 </CodeGroup>
 
 <Accordion title="Example citation">
-  ```python
+  ```json
   {
-      "type": "content_block_location",
-      "cited_text": "The exact text being cited",  # not counted toward output tokens
-      "document_index": 0,
-      "document_title": "Document Title",
-      "start_block_index": 0,  # 0-indexed
-      "end_block_index": 1,  # exclusive
+    "type": "content_block_location",
+    "cited_text": "The exact text being cited", // not counted toward output tokens
+    "document_index": 0,
+    "document_title": "Document Title",
+    "start_block_index": 0, // 0-indexed
+    "end_block_index": 1 // exclusive
   }
   ```
 </Accordion>
@@ -2153,76 +2153,76 @@ Custom content documents give you control over citation granularity. No addition
 
 When citations are enabled, responses include multiple text blocks with citations:
 
-```python
+```json
 {
-    "content": [
-        {"type": "text", "text": "According to the document, "},
+  "content": [
+    { "type": "text", "text": "According to the document, " },
+    {
+      "type": "text",
+      "text": "the grass is green",
+      "citations": [
         {
-            "type": "text",
-            "text": "the grass is green",
-            "citations": [
-                {
-                    "type": "char_location",
-                    "cited_text": "The grass is green.",
-                    "document_index": 0,
-                    "document_title": "Example Document",
-                    "start_char_index": 0,
-                    "end_char_index": 20,
-                }
-            ],
-        },
-        {"type": "text", "text": " and "},
+          "type": "char_location",
+          "cited_text": "The grass is green.",
+          "document_index": 0,
+          "document_title": "Example Document",
+          "start_char_index": 0,
+          "end_char_index": 20
+        }
+      ]
+    },
+    { "type": "text", "text": " and " },
+    {
+      "type": "text",
+      "text": "the sky is blue",
+      "citations": [
         {
-            "type": "text",
-            "text": "the sky is blue",
-            "citations": [
-                {
-                    "type": "char_location",
-                    "cited_text": "The sky is blue.",
-                    "document_index": 0,
-                    "document_title": "Example Document",
-                    "start_char_index": 20,
-                    "end_char_index": 36,
-                }
-            ],
-        },
+          "type": "char_location",
+          "cited_text": "The sky is blue.",
+          "document_index": 0,
+          "document_title": "Example Document",
+          "start_char_index": 20,
+          "end_char_index": 36
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": ". Information from page 5 states that "
+    },
+    {
+      "type": "text",
+      "text": "water is essential",
+      "citations": [
         {
-            "type": "text",
-            "text": ". Information from page 5 states that ",
-        },
+          "type": "page_location",
+          "cited_text": "Water is essential for life.",
+          "document_index": 1,
+          "document_title": "PDF Document",
+          "start_page_number": 5,
+          "end_page_number": 6
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": ". The custom document mentions "
+    },
+    {
+      "type": "text",
+      "text": "important findings",
+      "citations": [
         {
-            "type": "text",
-            "text": "water is essential",
-            "citations": [
-                {
-                    "type": "page_location",
-                    "cited_text": "Water is essential for life.",
-                    "document_index": 1,
-                    "document_title": "PDF Document",
-                    "start_page_number": 5,
-                    "end_page_number": 6,
-                }
-            ],
-        },
-        {
-            "type": "text",
-            "text": ". The custom document mentions ",
-        },
-        {
-            "type": "text",
-            "text": "important findings",
-            "citations": [
-                {
-                    "type": "content_block_location",
-                    "cited_text": "These are important findings.",
-                    "document_index": 2,
-                    "document_title": "Custom Content Document",
-                    "start_block_index": 0,
-                    "end_block_index": 1,
-                }
-            ],
-        },
-    ]
+          "type": "content_block_location",
+          "cited_text": "These are important findings.",
+          "document_index": 2,
+          "document_title": "Custom Content Document",
+          "start_block_index": 0,
+          "end_block_index": 1
+        }
+      ]
+    }
+  ]
 }
 ```
 

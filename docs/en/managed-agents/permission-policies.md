@@ -30,7 +30,7 @@ You set permission policies in the agent's `tools` configuration when you create
 When creating an agent, you can apply a policy to every tool in `agent_toolset_20260401` using `default_config.permission_policy`:
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   agent=$(curl -fsSL https://api.anthropic.com/v1/agents \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -209,7 +209,7 @@ The `mcp_server_name` must match the `name` of a server in the `mcp_servers` arr
 This example connects a GitHub MCP server and allows its tools to run without confirmation:
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   agent=$(curl -fsSL https://api.anthropic.com/v1/agents \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
@@ -454,7 +454,7 @@ This example connects a GitHub MCP server and allows its tools to run without co
 Use the `configs` array to override the default for individual tools. The `name` values for the agent toolset are listed in [Available tools](/docs/en/managed-agents/tools#available-tools). This example allows the full agent toolset by default but requires confirmation before any bash command runs:
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   tools='[
     {
       "type": "agent_toolset_20260401",
@@ -657,7 +657,7 @@ When the agent invokes a tool with an `always_ask` policy:
 In the following examples, the tool-use event IDs come from the `stop_reason.event_ids` array of the `session.status_idle` event. Learn more about receiving events in the [Session event stream](/docs/en/managed-agents/events-and-streaming#integrating-events) guide, or [subscribe to webhooks](/docs/en/managed-agents/webhooks) to be notified when a session pauses for input.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   # Allow the tool to execute
   curl -fsSL "https://api.anthropic.com/v1/sessions/$SESSION_ID/events" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \

@@ -28,7 +28,7 @@ Every persisted event includes a `processed_at` timestamp set when the event fin
     Send a `user.message` event to start or continue the agent's work:
 
     <CodeGroup>
-      ```bash curl
+      ```bash cURL
       curl --fail-with-body -sS "https://api.anthropic.com/v1/sessions/$SESSION_ID/events?beta=true" \
         -H "x-api-key: $ANTHROPIC_API_KEY" \
         -H "anthropic-version: 2023-06-01" \
@@ -179,7 +179,7 @@ Every persisted event includes a `processed_at` timestamp set when the event fin
     Send a `user.interrupt` event to stop the agent mid-execution, then follow up with a `user.message` event to redirect it:
 
     <CodeGroup>
-      ```bash curl
+      ```bash cURL
       # Agent is currently analyzing a file...
       # Interrupt with a new direction:
       curl --fail-with-body -sS "https://api.anthropic.com/v1/sessions/$SESSION_ID/events?beta=true" \
@@ -369,7 +369,7 @@ Every persisted event includes a `processed_at` timestamp set when the event fin
     Stream events from the session to receive real-time updates as the agent works. Only events emitted after the stream is opened are delivered, so open the stream before sending events to avoid a race condition.
 
     <CodeGroup>
-      ```bash curl
+      ```bash cURL
       # Open the stream first, then send the user message
       exec {stream}< <(
         curl --fail-with-body -sS -N \
@@ -577,7 +577,7 @@ Every persisted event includes a `processed_at` timestamp set when the event fin
           Iterable<BetaManagedAgentsStreamSessionEvents> events = stream.stream()::iterator;
           for (var event : events) {
               if (event.isAgentMessage()) {
-                  event.asAgentMessage().content().forEach(block -> IO.print(block.text()));
+                  event.asAgentMessage().content().forEach(block -> block.text().ifPresent(textBlock -> IO.print(textBlock.text())));
               } else if (event.isSessionStatusIdle()) {
                   break;
               } else if (event.isSessionError()) {
@@ -657,7 +657,7 @@ Every persisted event includes a `processed_at` timestamp set when the event fin
     3. Tail the live stream, skipping any events already returned by the history list.
 
     <CodeGroup>
-      ```bash curl
+      ```bash cURL
       exec {stream}< <(
         curl --fail-with-body -sS -N \
           "https://api.anthropic.com/v1/sessions/$SESSION_ID/events/stream?beta=true" \
@@ -841,7 +841,8 @@ Every persisted event includes a `processed_at` timestamp set when the event fin
                   && seenEventIds.add(json.values().get("id").asStringOrThrow()))
               .takeWhile(event -> !event.isSessionStatusIdle())
               .filter(BetaManagedAgentsStreamSessionEvents::isAgentMessage)
-              .forEach(event -> event.asAgentMessage().content().forEach(block -> IO.print(block.text())));
+              .forEach(event -> event.asAgentMessage().content()
+                  .forEach(block -> block.text().ifPresent(textBlock -> IO.print(textBlock.text()))));
       }
       ```
 
@@ -901,7 +902,7 @@ Every persisted event includes a `processed_at` timestamp set when the event fin
     Retrieve the full event history for a session:
 
     <CodeGroup>
-      ```bash curl
+      ```bash cURL
       curl --fail-with-body -sS "https://api.anthropic.com/v1/sessions/$SESSION_ID/events?beta=true" \
         -H "x-api-key: $ANTHROPIC_API_KEY" \
         -H "anthropic-version: 2023-06-01" \
@@ -973,7 +974,7 @@ Every persisted event includes a `processed_at` timestamp set when the event fin
     Pass a `types` filter to return only specific event types:
 
     <CodeGroup>
-      ```bash curl
+      ```bash cURL
       curl --fail-with-body -sS "https://api.anthropic.com/v1/sessions/$SESSION_ID/events?beta=true&types[]=agent.tool_use&types[]=agent.tool_result" \
         -H "x-api-key: $ANTHROPIC_API_KEY" \
         -H "anthropic-version: 2023-06-01" \
@@ -1129,7 +1130,7 @@ Guarantees the pattern relies on:
 * A connection emits at most one `event_start` per `event_id`, and the buffered event is the last thing that connection delivers for that `id`.
 
 <CodeGroup>
-  ```bash curl
+  ```bash cURL
   # Opt in to agent.message previews via event_deltas, then accumulate manually.
   exec {stream}< <(
     curl --fail-with-body -sS -N \
@@ -1472,7 +1473,8 @@ Guarantees the pattern relies on:
               var message = event.asAgentMessage();
               previews.remove(message.id());
               var text = message.content().stream()
-                  .map(block -> block.text())
+                  .flatMap(block -> block.text().stream())
+                  .map(textBlock -> textBlock.text())
                   .collect(Collectors.joining());
               IO.println("agent.message           " + message.id() + " " + text);
           } else if (event.isSpanModelRequestEnd()) {
@@ -1547,8 +1549,8 @@ The thread stream's path is easy to get wrong: it is `/threads/{thread_id}/strea
 
 The preview events themselves don't change. `event_start` and `event_delta` have the same shape on a thread stream as on the session-level stream, and the [accumulate and reconcile](#accumulate-and-reconcile) pattern applies as written. The one adjustment is bookkeeping: run one accumulator instance per stream connection.
 
-<CodeGroup defaultLanguage="curl">
-  ```bash curl
+<CodeGroup defaultLanguage="cURL">
+  ```bash cURL
   # List the session's threads and pick a child: child threads carry a non-null
   # parent_thread_id, and the primary thread's parent_thread_id is null.
   THREAD_ID=$(
@@ -1798,7 +1800,7 @@ The preview events themselves don't change. `event_start` and `event_delta` have
           } else if (event.isAgentMessage()) {
               // The buffered event is the authoritative record; render its content.
               IO.println();
-              event.asAgentMessage().content().forEach(block -> IO.print(block.text()));
+              event.asAgentMessage().content().forEach(block -> block.text().ifPresent(textBlock -> IO.print(textBlock.text())));
               IO.println();
           } else if (event.isSessionThreadStatusIdle()) {
               break;
@@ -1876,7 +1878,7 @@ When the agent invokes a [custom tool](/docs/en/managed-agents/tools#custom-tool
 4. Once all blocking events are resolved, the session transitions back to `running`.
 
 <CodeGroup>
-  ```bash curl
+  ```bash cURL
   exec {stream_fd}< <(curl --fail-with-body -sS -N \
     "https://api.anthropic.com/v1/sessions/$SESSION_ID/events/stream?beta=true" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
@@ -2152,7 +2154,7 @@ When a [permission policy](/docs/en/managed-agents/permission-policies) requires
 4. Once all blocking events are resolved, the session transitions back to `running`.
 
 <CodeGroup>
-  ```bash curl
+  ```bash cURL
   exec {stream_fd}< <(curl --fail-with-body -sS -N \
     "https://api.anthropic.com/v1/sessions/$SESSION_ID/events/stream?beta=true" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
@@ -2383,7 +2385,7 @@ Sessions persist between interactions. Conversation history is preserved unless 
 To resume a session, send a `user.message` event to it as usual:
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   # In production, pass the stored ID of the session you want to resume.
   curl --fail-with-body -sS "https://api.anthropic.com/v1/sessions/$SESSION_ID/events?beta=true" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
@@ -2567,7 +2569,7 @@ No event resumes a session paused at its cap. Instead, update the session's budg
 Send a `system.message` event to give the agent privileged system-level context that applies to the accompanying turn and all subsequent turns. Unlike the `system` field on the agent definition (which sets the top-level system prompt), `system.message` content is appended to the session's system context as a `role: "system"` turn rather than replacing that prompt. Use it when the agent needs updated system-level guidance mid-session: a different persona, revised constraints, or context fetched at runtime that should shape the model's behavior going forward.
 
 <CodeGroup defaultLanguage="CLI">
-  ```bash curl
+  ```bash cURL
   curl --fail-with-body -sS "https://api.anthropic.com/v1/sessions/$SESSION_ID/events?beta=true" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
