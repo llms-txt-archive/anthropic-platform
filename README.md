@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260813T183758Z` | 2026-08-13 18:37 UTC | [Compliance Session Docs Split Out](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260813T183758Z) |
+| `archive-20260814T193557Z` | 2026-08-14 19:35 UTC | [Clarified Model Pairing, Outputs, and Hook Hosting](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260814T193557Z) |
+| `archive-20260813T183758Z` | 2026-08-13 18:38 UTC | [Compliance Session Docs Split Out](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260813T183758Z) |
 | `archive-20260813T174054Z` | 2026-08-13 17:42 UTC | [Compliance sessions and managed agents docs refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260813T174054Z) |
 | `archive-20260812T212715Z` | 2026-08-12 21:28 UTC | [Workspace header docs and advisor tool updates](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260812T212715Z) |
 | `archive-20260812T174027Z` | 2026-08-12 17:42 UTC | [Managed Agents Budgets and Governance Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260812T174027Z) |
 | `archive-20260811T212755Z` | 2026-08-11 21:29 UTC | [Classification Guide Added, Session Budget Docs Removed](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260811T212755Z) |
-| `archive-20260811T194438Z` | 2026-08-11 19:46 UTC | [Managed Agents budgets and session controls](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260811T194438Z) |
