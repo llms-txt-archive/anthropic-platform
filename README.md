@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260819T215910Z` | 2026-08-19 21:59 UTC | [Claude Platform docs: Files and Skills GA](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260819T215910Z) |
+| `archive-20260819T225923Z` | 2026-08-19 22:59 UTC | [Managed Agents web controls and self-hosted memory docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260819T225923Z) |
+| `archive-20260819T215910Z` | 2026-08-19 22:00 UTC | [Claude Platform docs: Files and Skills GA](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260819T215910Z) |
 | `archive-20260819T195753Z` | 2026-08-19 19:58 UTC | [Files API lifecycle updates and Skills GA docs refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260819T195753Z) |
 | `archive-20260819T190703Z` | 2026-08-19 19:08 UTC | [Resource Navigation Split](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260819T190703Z) |
 | `archive-20260819T175757Z` | 2026-08-19 17:58 UTC | [Claude Enterprise User Management GA](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260819T175757Z) |
 | `archive-20260819T050750Z` | 2026-08-19 05:08 UTC | [Prompt Caching Guide Trims Multi-SDK Examples](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260819T050750Z) |
-| `archive-20260819T020654Z` | 2026-08-19 02:07 UTC | [Playground Rename and CMEK Timing Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260819T020654Z) |
