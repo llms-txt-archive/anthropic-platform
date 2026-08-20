@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260820T180130Z` | 2026-08-20 18:01 UTC | [Stable Files and Skills API docs added](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260820T180130Z) |
+| `archive-20260820T191832Z` | 2026-08-20 19:18 UTC | [GA Computer Use and Browser Use Guidance](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260820T191832Z) |
+| `archive-20260820T180130Z` | 2026-08-20 18:02 UTC | [Stable Files and Skills API docs added](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260820T180130Z) |
 | `archive-20260820T170538Z` | 2026-08-20 17:07 UTC | [GA Refresh for Files, Skills, and Managed Agents](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260820T170538Z) |
 | `archive-20260819T225923Z` | 2026-08-19 23:00 UTC | [Managed Agents web controls and self-hosted memory docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260819T225923Z) |
 | `archive-20260819T215910Z` | 2026-08-19 22:00 UTC | [Claude Platform docs: Files and Skills GA](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260819T215910Z) |
 | `archive-20260819T195753Z` | 2026-08-19 19:58 UTC | [Files API lifecycle updates and Skills GA docs refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260819T195753Z) |
-| `archive-20260819T190703Z` | 2026-08-19 19:08 UTC | [Resource Navigation Split](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260819T190703Z) |
