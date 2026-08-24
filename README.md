@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260821T195612Z` | 2026-08-21 19:56 UTC | [Python SDK v1, stable Files/Skills, and Managed Agents](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260821T195612Z) |
+| `archive-20260824T210436Z` | 2026-08-24 21:04 UTC | [Model Docs Reorg and Compliance API Expansion](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260824T210436Z) |
+| `archive-20260821T195612Z` | 2026-08-21 19:57 UTC | [Python SDK v1, stable Files/Skills, and Managed Agents](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260821T195612Z) |
 | `archive-20260820T200119Z` | 2026-08-20 20:02 UTC | [Browser Use Tool docs added](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260820T200119Z) |
 | `archive-20260820T191832Z` | 2026-08-20 19:20 UTC | [GA Computer Use and Browser Use Guidance](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260820T191832Z) |
 | `archive-20260820T180130Z` | 2026-08-20 18:02 UTC | [Stable Files and Skills API docs added](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260820T180130Z) |
 | `archive-20260820T170538Z` | 2026-08-20 17:07 UTC | [GA Refresh for Files, Skills, and Managed Agents](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260820T170538Z) |
-| `archive-20260819T225923Z` | 2026-08-19 23:00 UTC | [Managed Agents web controls and self-hosted memory docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260819T225923Z) |
