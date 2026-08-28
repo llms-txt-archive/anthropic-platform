@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
+| `archive-20260828T062115Z` | 2026-08-28 06:21 UTC | [API key scoping and migration docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260828T062115Z) |
 | `archive-20260827T223602Z` | 2026-08-27 22:36 UTC | [Homepage Model Lineup and Pricing FAQ Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260827T223602Z) |
 | `archive-20260827T010404Z` | 2026-08-27 01:05 UTC | [Compliance API and AWS CMEK Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260827T010404Z) |
 | `archive-20260826T211358Z` | 2026-08-26 21:15 UTC | [Beta Organization API Docs and Foundry Availability Updates](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260826T211358Z) |
 | `archive-20260826T182415Z` | 2026-08-26 18:25 UTC | [Admin API SDK Guides and Expanded Session Coverage](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260826T182415Z) |
 | `archive-20260826T160441Z` | 2026-08-26 16:05 UTC | [Google Cloud toolsets and compliance handling updates](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260826T160441Z) |
-| `archive-20260825T152635Z` | 2026-08-25 15:28 UTC | [Model Migration Guides Split Out](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260825T152635Z) |
