@@ -12,18 +12,18 @@ https://platform.claude.com
 
 The full documentation is available in the following languages on https://platform.claude.com/docs:
 
-- English (en) - 695 pages - /docs - Content included below
-- German (Deutsch) (de) - 211 pages - /docs/de - Visit website for content
-- Spanish (Español) (es) - 211 pages - /docs/es - Visit website for content
-- French (Français) (fr) - 211 pages - /docs/fr - Visit website for content
-- Italian (Italiano) (it) - 211 pages - /docs/it - Visit website for content
-- Japanese (日本語) (ja) - 211 pages - /docs/ja - Visit website for content
-- Korean (한국어) (ko) - 211 pages - /docs/ko - Visit website for content
-- Portuguese (Português) (pt-BR) - 211 pages - /docs/pt-BR - Visit website for content
-- Russian (Русский) (ru) - 211 pages - /docs/ru - Visit website for content
-- Chinese Simplified (简体中文) (zh-CN) - 211 pages - /docs/zh-CN - Visit website for content
-- Chinese Traditional (繁體中文) (zh-TW) - 211 pages - /docs/zh-TW - Visit website for content
-- Indonesian (Bahasa Indonesia) (id) - 211 pages - /docs/id - Visit website for content
+- English (en) - 698 pages - /docs - Content included below
+- German (Deutsch) (de) - 249 pages - /docs/de - Visit website for content
+- Spanish (Español) (es) - 249 pages - /docs/es - Visit website for content
+- French (Français) (fr) - 249 pages - /docs/fr - Visit website for content
+- Italian (Italiano) (it) - 249 pages - /docs/it - Visit website for content
+- Japanese (日本語) (ja) - 249 pages - /docs/ja - Visit website for content
+- Korean (한국어) (ko) - 249 pages - /docs/ko - Visit website for content
+- Portuguese (Português) (pt-BR) - 249 pages - /docs/pt-BR - Visit website for content
+- Russian (Русский) (ru) - 249 pages - /docs/ru - Visit website for content
+- Chinese Simplified (简体中文) (zh-CN) - 249 pages - /docs/zh-CN - Visit website for content
+- Chinese Traditional (繁體中文) (zh-TW) - 249 pages - /docs/zh-TW - Visit website for content
+- Indonesian (Bahasa Indonesia) (id) - 249 pages - /docs/id - Visit website for content
 
 ---
 
@@ -360,6 +360,7 @@ The full documentation is available in the following languages on https://platfo
 - [Collaborators](https://platform.claude.com/docs/en/api/compliance/apps/projects/collaborators.md)
 - [Completions](https://platform.claude.com/docs/en/api/completions.md)
 - [Compliance API](https://platform.claude.com/docs/en/api/compliance.md)
+- [Compliance Settings (Beta)](https://platform.claude.com/docs/en/api/beta/organization/compliance_settings.md)
 - [Connectors](https://platform.claude.com/docs/en/api/admin/analytics/connectors.md)
 - [Cost](https://platform.claude.com/docs/en/api/admin/analytics/cost.md)
 - [Cost Report](https://platform.claude.com/docs/en/api/admin/cost_report.md)
@@ -474,6 +475,7 @@ The full documentation is available in the following languages on https://platfo
 - [Get Claude-generated file metadata](https://platform.claude.com/docs/en/api/compliance/apps/chats/generated_files/retrieve.md)
 - [Get Compliance Group](https://platform.claude.com/docs/en/api/compliance/groups/retrieve.md)
 - [Get Compliance Role](https://platform.claude.com/docs/en/api/compliance/organizations/roles/retrieve.md)
+- [Get Compliance Settings (Beta)](https://platform.claude.com/docs/en/api/beta/organization/compliance_settings/retrieve.md)
 - [Get Connector Usage](https://platform.claude.com/docs/en/api/admin/analytics/connectors/list.md)
 - [Get Cost Over Time](https://platform.claude.com/docs/en/api/admin/analytics/cost/list.md)
 - [Get Cost Report](https://platform.claude.com/docs/en/api/admin/cost_report/retrieve.md)
@@ -704,6 +706,7 @@ The full documentation is available in the following languages on https://platfo
 - [Update Agent (Beta)](https://platform.claude.com/docs/en/api/beta/agents/update.md)
 - [Update API Key](https://platform.claude.com/docs/en/api/admin/api_keys/update.md)
 - [Update API Key (Beta)](https://platform.claude.com/docs/en/api/beta/organization/api_keys/update.md)
+- [Update Compliance Settings (Beta)](https://platform.claude.com/docs/en/api/beta/organization/compliance_settings/update.md)
 - [Update Credential (Beta)](https://platform.claude.com/docs/en/api/beta/vaults/credentials/update.md)
 - [Update Deployment (Beta)](https://platform.claude.com/docs/en/api/beta/deployments/update.md)
 - [Update Environment (Beta)](https://platform.claude.com/docs/en/api/beta/environments/update.md)
