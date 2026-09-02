@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260901T220156Z` | 2026-09-01 22:01 UTC | [Compliance Settings and Beta API Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260901T220156Z) |
+| `archive-20260902T180705Z` | 2026-09-02 18:07 UTC | [Clarified Fetch, Retention, and Setup Guidance](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260902T180705Z) |
+| `archive-20260901T220156Z` | 2026-09-01 22:03 UTC | [Compliance Settings and Beta API Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260901T220156Z) |
 | `archive-20260901T185010Z` | 2026-09-01 18:51 UTC | [Claude Fable 5.1 Docs and Thinking Updates](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260901T185010Z) |
 | `archive-20260901T000508Z` | 2026-09-01 00:06 UTC | [Compatibility, Sessions, and Recovery Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260901T000508Z) |
 | `archive-20260828T190050Z` | 2026-08-28 19:02 UTC | [Files, Skills, and Thinking Migration Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260828T190050Z) |
 | `archive-20260828T062115Z` | 2026-08-28 06:22 UTC | [API key scoping and migration docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260828T062115Z) |
-| `archive-20260827T223602Z` | 2026-08-27 22:36 UTC | [Homepage Model Lineup and Pricing FAQ Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260827T223602Z) |
