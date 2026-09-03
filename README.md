@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260903T062930Z` | 2026-09-03 06:29 UTC | [Preserved thinking FAQ and task budget clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260903T062930Z) |
+| `archive-20260903T193248Z` | 2026-09-03 19:32 UTC | [Batch Processing Compatibility Clarified](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260903T193248Z) |
+| `archive-20260903T062930Z` | 2026-09-03 06:30 UTC | [Preserved thinking FAQ and task budget clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260903T062930Z) |
 | `archive-20260902T233327Z` | 2026-09-02 23:34 UTC | [Enterprise API versioning and model guidance refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260902T233327Z) |
 | `archive-20260902T180705Z` | 2026-09-02 18:08 UTC | [Clarified Fetch, Retention, and Setup Guidance](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260902T180705Z) |
 | `archive-20260901T220156Z` | 2026-09-01 22:03 UTC | [Compliance Settings and Beta API Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260901T220156Z) |
 | `archive-20260901T185010Z` | 2026-09-01 18:51 UTC | [Claude Fable 5.1 Docs and Thinking Updates](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260901T185010Z) |
-| `archive-20260901T000508Z` | 2026-09-01 00:06 UTC | [Compatibility, Sessions, and Recovery Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260901T000508Z) |
