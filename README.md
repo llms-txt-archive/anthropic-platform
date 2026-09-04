@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260904T002443Z` | 2026-09-04 00:24 UTC | [Managed Agents apply workflow and bearer auth refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260904T002443Z) |
+| `archive-20260904T210242Z` | 2026-09-04 21:02 UTC | [Preserved Thinking Guide and Admin API Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260904T210242Z) |
+| `archive-20260904T002443Z` | 2026-09-04 00:25 UTC | [Managed Agents apply workflow and bearer auth refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260904T002443Z) |
 | `archive-20260903T193248Z` | 2026-09-03 19:33 UTC | [Batch Processing Compatibility Clarified](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260903T193248Z) |
 | `archive-20260903T062930Z` | 2026-09-03 06:30 UTC | [Preserved thinking FAQ and task budget clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260903T062930Z) |
 | `archive-20260902T233327Z` | 2026-09-02 23:34 UTC | [Enterprise API versioning and model guidance refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260902T233327Z) |
 | `archive-20260902T180705Z` | 2026-09-02 18:08 UTC | [Clarified Fetch, Retention, and Setup Guidance](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260902T180705Z) |
-| `archive-20260901T220156Z` | 2026-09-01 22:03 UTC | [Compliance Settings and Beta API Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260901T220156Z) |
