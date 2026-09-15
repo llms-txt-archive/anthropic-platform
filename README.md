@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260914T170324Z` | 2026-09-14 17:03 UTC | [Clarified Thinking, Compliance, and Inference Hook Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260914T170324Z) |
+| `archive-20260915T052144Z` | 2026-09-15 05:21 UTC | [Compliance activity expansion and beta API clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260915T052144Z) |
+| `archive-20260914T170324Z` | 2026-09-14 17:04 UTC | [Clarified Thinking, Compliance, and Inference Hook Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260914T170324Z) |
 | `archive-20260911T175539Z` | 2026-09-11 17:57 UTC | [Browser Downloads and CMEK Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260911T175539Z) |
 | `archive-20260911T003319Z` | 2026-09-11 00:34 UTC | [Thinking errors and Inference hooks setup clarified](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260911T003319Z) |
 | `archive-20260910T191732Z` | 2026-09-10 19:20 UTC | [Beta Organization Reorg and Managed Agents Auto Policies](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260910T191732Z) |
 | `archive-20260910T012756Z` | 2026-09-10 01:28 UTC | [Tool naming and API reference cleanup](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260910T012756Z) |
-| `archive-20260909T200116Z` | 2026-09-09 20:03 UTC | [Commerce Agent Guide and Platform Doc Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260909T200116Z) |
