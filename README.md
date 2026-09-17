@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260917T171619Z` | 2026-09-17 17:16 UTC | [Claude in Chrome Coverage Added to Compliance API Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260917T171619Z) |
+| `archive-20260917T230608Z` | 2026-09-17 23:06 UTC | [Compliance coverage and AWS clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260917T230608Z) |
+| `archive-20260917T171619Z` | 2026-09-17 17:17 UTC | [Claude in Chrome Coverage Added to Compliance API Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260917T171619Z) |
 | `archive-20260916T174444Z` | 2026-09-16 17:46 UTC | [Session Connect, Compaction, and Compliance Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260916T174444Z) |
 | `archive-20260915T191225Z` | 2026-09-15 19:13 UTC | [On-Demand Compaction and Tool Guardrail Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260915T191225Z) |
 | `archive-20260915T052144Z` | 2026-09-15 05:23 UTC | [Compliance activity expansion and beta API clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260915T052144Z) |
 | `archive-20260914T170324Z` | 2026-09-14 17:04 UTC | [Clarified Thinking, Compliance, and Inference Hook Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260914T170324Z) |
-| `archive-20260911T175539Z` | 2026-09-11 17:57 UTC | [Browser Downloads and CMEK Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260911T175539Z) |
