@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260922T001745Z` | 2026-09-22 00:17 UTC | [Compaction Guidance and Availability Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260922T001745Z) |
+| `archive-20260922T052252Z` | 2026-09-22 05:22 UTC | [Preserved Thinking Monitoring and Effort Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260922T052252Z) |
+| `archive-20260922T001745Z` | 2026-09-22 00:18 UTC | [Compaction Guidance and Availability Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260922T001745Z) |
 | `archive-20260921T211432Z` | 2026-09-21 21:15 UTC | [Compaction Docs Split and Reference Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260921T211432Z) |
 | `archive-20260918T195757Z` | 2026-09-18 19:59 UTC | [Claude Console Spend Limits and CMEK Docs Update](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260918T195757Z) |
 | `archive-20260917T230608Z` | 2026-09-17 23:08 UTC | [Compliance coverage and AWS clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260917T230608Z) |
 | `archive-20260917T171619Z` | 2026-09-17 17:17 UTC | [Claude in Chrome Coverage Added to Compliance API Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260917T171619Z) |
-| `archive-20260916T174444Z` | 2026-09-16 17:46 UTC | [Session Connect, Compaction, and Compliance Docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260916T174444Z) |
