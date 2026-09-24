@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20260923T231107Z` | 2026-09-23 23:11 UTC | [Opus 5.5 Cost Guidance and Tooling Example Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260923T231107Z) |
+| `archive-20260924T175740Z` | 2026-09-24 17:57 UTC | [Cache Diagnostics GA and Billing Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260924T175740Z) |
+| `archive-20260923T231107Z` | 2026-09-23 23:12 UTC | [Opus 5.5 Cost Guidance and Tooling Example Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260923T231107Z) |
 | `archive-20260923T204108Z` | 2026-09-23 20:42 UTC | [Inline Tools and API Reference Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260923T204108Z) |
 | `archive-20260922T191024Z` | 2026-09-22 19:12 UTC | [Claude Opus 5.5 rollout and agent docs refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260922T191024Z) |
 | `archive-20260922T052252Z` | 2026-09-22 05:23 UTC | [Preserved Thinking Monitoring and Effort Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260922T052252Z) |
 | `archive-20260922T001745Z` | 2026-09-22 00:18 UTC | [Compaction Guidance and Availability Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260922T001745Z) |
-| `archive-20260921T211432Z` | 2026-09-21 21:15 UTC | [Compaction Docs Split and Reference Clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20260921T211432Z) |
