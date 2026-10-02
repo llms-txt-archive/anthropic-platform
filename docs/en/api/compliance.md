@@ -41517,7 +41517,7 @@ compliance activities that can be filtered by various criteria.
 
     - `webhook_url: string`
 
-      The endpoint that inspected prompts and responses are sent to.
+      Scheme and host of the endpoint that Inference hooks sends prompts and responses to after this change, for example `https://hooks.example.com`; the port, path and query are never included. Empty when the address cannot be shown safely, and on activities recorded before this field was limited to scheme and host.
 
     - `id: optional string`
 
@@ -58219,7 +58219,7 @@ compliance activities that can be filtered by various criteria.
 
     - `mcp_server_url: optional string or null`
 
-      Origin (scheme, host and port, the default port omitted) of the MCP server at the time of the change; the path is never included. Null when not available.
+      Origin (scheme, host and port, the default port omitted) of the MCP server at the time of the change; the path is never included. Null when not available, and on activities recorded before this field was limited to the origin.
 
     - `organization_id: optional string or null`
 
@@ -70913,6 +70913,10 @@ compliance activities that can be filtered by various criteria.
 
       format: date-time
 
+    - `ip_range: optional string or null`
+
+      The IP range added to the allowlist, e.g. "192.0.2.0/24", which is not enforced while it is inactive or the IP allowlist is turned off; absent for activities recorded before this field was added.
+
     - `organization_id: optional string or null`
 
       Organization ID this activity is associated with
@@ -71144,6 +71148,10 @@ compliance activities that can be filtered by various criteria.
       When this activity occurred.
 
       format: date-time
+
+    - `ip_range: optional string or null`
+
+      The IP range removed from the allowlist, e.g. "192.0.2.0/24"; absent for activities recorded before this field was added.
 
     - `organization_id: optional string or null`
 
@@ -71379,7 +71387,15 @@ compliance activities that can be filtered by various criteria.
 
     - `ip_allowlist_enabled: optional boolean or null`
 
-      Whether the organization's IP allowlist is turned on (true) or off (false) after this change; absent or null when the change was to an individual IP range, and for activities recorded before this field was added.
+      Whether the organization's IP allowlist is turned on (true) or off (false) after this change; absent when the change did not turn the IP allowlist on or off, and for activities recorded before this field was added.
+
+    - `ip_range: optional string or null`
+
+      The IP range this change applied to, as it is after the change, e.g. "192.0.2.0/24"; absent when the change was not to an individual IP range, and for activities recorded before this field was added.
+
+    - `ip_range_active: optional boolean or null`
+
+      Whether the IP range is active on the allowlist (true) or saved but inactive (false) after this change; absent when the change did not turn the range on or off.
 
     - `organization_id: optional string or null`
 
@@ -71388,6 +71404,10 @@ compliance activities that can be filtered by various criteria.
     - `organization_uuid: optional string or null`
 
       Organization UUID where the activity occurred. Null when the activity is not tied to an organization (for example, login and logout events or calls to the Compliance API).
+
+    - `previous_ip_range: optional string or null`
+
+      The IP range before this change; absent unless the range itself was changed.
 
   - `OrgInviteLinkDisabled object`
 
@@ -98520,10 +98540,6 @@ compliance activities that can be filtered by various criteria.
 
       Tagged ID of the created app
 
-    - `workspace_id: string`
-
-      Tagged ID of the workspace the app is scoped to
-
     - `id: optional string`
 
       Unique identifier for the activity e.g. 'activity_abcd1234'
@@ -98541,6 +98557,10 @@ compliance activities that can be filtered by various criteria.
     - `organization_uuid: optional string or null`
 
       Organization UUID where the activity occurred. Null when the activity is not tied to an organization (for example, login and logout events or calls to the Compliance API).
+
+    - `workspace_id: optional string or null`
+
+      Tagged ID of the workspace the app is scoped to. Null or absent if the app is not scoped to a workspace.
 
   - `PlatformOAuthAppRevoked object`
 
@@ -136871,6 +136891,22 @@ returned.
 
     Artifact identifier (tagged ID)
 
+  - `artifact_type: "claude_design" or "claude_design_systems" or "claude_docs" or 3 more`
+
+    Which kind of Artifact this is: `code` for a site published from Claude Code, or the built-in Artifact type it was made from — `claude_docs` (Claude Docs), `claude_slides` (Slides), `claude_design` (Design) or `claude_design_systems` (a design system). `other` is an Artifact made from a built-in type this list does not name yet.
+
+    - `"claude_design"`
+
+    - `"claude_design_systems"`
+
+    - `"claude_docs"`
+
+    - `"claude_slides"`
+
+    - `"code"`
+
+    - `"other"`
+
   - `organization_uuid: string`
 
     Organization UUID this Artifact belongs to
@@ -136954,6 +136990,7 @@ curl https://api.anthropic.com/v1/compliance/apps/code/artifacts \
   "data": [
     {
       "id": "cart_01Tu9VwXyZaBcDeFgHiJkLmN",
+      "artifact_type": "claude_docs",
       "organization_uuid": "a1b2c3d4-e5f6-4789-a012-3456789abcde",
       "owner_user_id": "user_01WCz1FkmYMm4gnmykNKUu3Q",
       "published_version_id": "1741803761-9f3a",

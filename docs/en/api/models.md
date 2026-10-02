@@ -143,6 +143,10 @@ The Models API response can be used to determine which models are available for 
 
   - `"mcp-client-2026-09-15"`
 
+  - `"ce-plugins-2026-09-01"`
+
+  - `"spend-limit-reads-2026-09-26"`
+
 ### Returns
 
 - `data: array of ModelInfo`
@@ -503,6 +507,10 @@ The Models API response can be used to determine information about a specific mo
   - `"inline-tools-2026-09-15"`
 
   - `"mcp-client-2026-09-15"`
+
+  - `"ce-plugins-2026-09-01"`
+
+  - `"spend-limit-reads-2026-09-26"`
 
 ### Returns
 

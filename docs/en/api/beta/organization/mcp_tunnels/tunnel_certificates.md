@@ -130,6 +130,10 @@ holds at most two non-archived certificates.
 
   - `"mcp-client-2026-09-15"`
 
+  - `"ce-plugins-2026-09-01"`
+
+  - `"spend-limit-reads-2026-09-26"`
+
 ### Body parameters
 
 - `ca_certificate_pem: string`
@@ -350,6 +354,10 @@ Archived certificates are excluded unless `include_archived` is set.
 
   - `"mcp-client-2026-09-15"`
 
+  - `"ce-plugins-2026-09-01"`
+
+  - `"spend-limit-reads-2026-09-26"`
+
 ### Returns
 
 - `data: array of BetaOrganizationTunnelCertificate`
@@ -548,6 +556,10 @@ Retrieve a single certificate registered on a tunnel by ID.
 
   - `"mcp-client-2026-09-15"`
 
+  - `"ce-plugins-2026-09-01"`
+
+  - `"spend-limit-reads-2026-09-26"`
+
 ### Returns
 
 - `BetaOrganizationTunnelCertificate object`
@@ -740,6 +752,10 @@ certificate is added.
   - `"inline-tools-2026-09-15"`
 
   - `"mcp-client-2026-09-15"`
+
+  - `"ce-plugins-2026-09-01"`
+
+  - `"spend-limit-reads-2026-09-26"`
 
 ### Returns
 

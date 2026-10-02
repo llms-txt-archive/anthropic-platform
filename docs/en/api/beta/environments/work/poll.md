@@ -133,6 +133,10 @@ Long poll for work items in the queue.
 
   - `"mcp-client-2026-09-15"`
 
+  - `"ce-plugins-2026-09-01"`
+
+  - `"spend-limit-reads-2026-09-26"`
+
 - `"Anthropic-Worker-ID": optional string`
 
   Unique identifier for the specific worker polling, used to track aggregated environment-level work metrics in Console

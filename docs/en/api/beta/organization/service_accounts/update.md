@@ -126,6 +126,10 @@ interactive credential (a user OAuth token or a Console session).
 
   - `"mcp-client-2026-09-15"`
 
+  - `"ce-plugins-2026-09-01"`
+
+  - `"spend-limit-reads-2026-09-26"`
+
 ## Body parameters
 
 - `description: optional string or null`

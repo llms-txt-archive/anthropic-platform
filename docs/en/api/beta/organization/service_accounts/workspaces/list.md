@@ -147,6 +147,10 @@ page to recover.
 
   - `"mcp-client-2026-09-15"`
 
+  - `"ce-plugins-2026-09-01"`
+
+  - `"spend-limit-reads-2026-09-26"`
+
 ## Returns
 
 - `data: array of BetaServiceAccountWorkspaceMember`
