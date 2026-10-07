@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20261007T091617Z` | 2026-10-07 09:16 UTC | [Mythos access and Admin API docs refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20261007T091617Z) |
+| `archive-20261007T221630Z` | 2026-10-07 22:16 UTC | [Claude Haiku 5.5 rollout across platform docs](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20261007T221630Z) |
+| `archive-20261007T091617Z` | 2026-10-07 09:18 UTC | [Mythos access and Admin API docs refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20261007T091617Z) |
 | `archive-20261007T014851Z` | 2026-10-07 01:49 UTC | [Managed agents web tool restrictions](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20261007T014851Z) |
 | `archive-20261006T215436Z` | 2026-10-06 21:56 UTC | [Managed Agents Split and Transcript Error Guidance](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20261006T215436Z) |
 | `archive-20261006T104702Z` | 2026-10-06 10:47 UTC | [Bedrock migration notes and inference hook clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20261006T104702Z) |
 | `archive-20261006T032022Z` | 2026-10-06 03:21 UTC | [Agent, RBAC, and Fable Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20261006T032022Z) |
-| `archive-20261005T225514Z` | 2026-10-05 22:57 UTC | [Models API, compliance, and hook docs refreshed](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20261005T225514Z) |
