@@ -7,7 +7,7 @@ Every change to the upstream docs produces a git commit and a GitHub release, so
 | | |
 |---|---|
 | **Source** | [https://platform.claude.com/llms.txt](https://platform.claude.com/llms.txt) |
-| **Documents** | 753 Markdown files |
+| **Documents** | 754 Markdown files |
 | **Schedule** | Hourly at :42 UTC |
 
 ## How it works
@@ -18,9 +18,9 @@ A [crawler](https://github.com/llms-txt-archive/llmstxt) reads the `llms.txt` in
 
 | Tag | Date | Summary |
 |-----|------|---------|
-| `archive-20261006T215436Z` | 2026-10-06 21:54 UTC | [Managed Agents Split and Transcript Error Guidance](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20261006T215436Z) |
+| `archive-20261007T014851Z` | 2026-10-07 01:48 UTC | [Managed agents web tool restrictions](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20261007T014851Z) |
+| `archive-20261006T215436Z` | 2026-10-06 21:56 UTC | [Managed Agents Split and Transcript Error Guidance](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20261006T215436Z) |
 | `archive-20261006T104702Z` | 2026-10-06 10:47 UTC | [Bedrock migration notes and inference hook clarifications](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20261006T104702Z) |
 | `archive-20261006T032022Z` | 2026-10-06 03:21 UTC | [Agent, RBAC, and Fable Docs Refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20261006T032022Z) |
 | `archive-20261005T225514Z` | 2026-10-05 22:57 UTC | [Models API, compliance, and hook docs refreshed](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20261005T225514Z) |
 | `archive-20261002T223507Z` | 2026-10-02 22:36 UTC | [Self-hosted sandbox docs split into focused guides](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20261002T223507Z) |
-| `archive-20261002T061223Z` | 2026-10-02 06:15 UTC | [Organization API docs split-out and plugin guide refresh](https://github.com/llms-txt-archive/anthropic-platform/releases/tag/archive-20261002T061223Z) |
